@@ -74,7 +74,7 @@ operation_id is stored in cs2_operations. Repeating an already committed operati
 
 ## Audit
 
-Every successful commit writes cs2_operations and cs2_audit_log with operation_id, action, target, actor, detail and timestamp.
+Every successful commit writes cs2_operations and cs2_audit_log with operation_id, action, target, actor, detail, timestamp, status and result. Successful writes use status `committed`; result contains the committed version and timestamp.
 
 ## Errors
 
