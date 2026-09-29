@@ -1,0 +1,4 @@
+project_id = "local"
+
+[functions.cs2-admin]
+verify_jwt = false
