@@ -3,7 +3,7 @@ import "../validation.js";
 const validateBase=(globalThis as any).CS2Validation?.validateBase;
 
 const headers={"Access-Control-Allow-Origin":"*","Access-Control-Allow-Headers":"authorization,x-client-info,apikey,content-type,x-cs2-api-key","Access-Control-Allow-Methods":"GET,POST,OPTIONS","Content-Type":"application/json; charset=utf-8"};
-const env=(n:string)=>Deno.env.get(n)||"", API_KEY=env("CS2_ADMIN_API_KEY"), BACKEND_KEY=env("SUPABASE_BACKEND_KEY"), URL=env("SUPABASE_URL");
+const env=(n:string)=>Deno.env.get(n)||"", API_KEY=env("CS2_ADMIN_API_KEY"), BACKEND_KEY=env("SUPABASE_SERVICE_ROLE_KEY"), URL=env("SUPABASE_URL");
 if(!URL||!BACKEND_KEY)throw new Error("backend secrets are not configured");
 const db=createClient(URL,BACKEND_KEY,{auth:{persistSession:false,autoRefreshToken:false}});
 const json=(x:unknown,s=200)=>new Response(JSON.stringify(x),{status:s,headers});
