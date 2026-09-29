@@ -130,3 +130,14 @@
 В этом режиме изменение, сохранённое одним человеком, появляется у остальных без перезагрузки страницы. Старый `START_SERVER.bat` оставлен как одиночный локальный режим без общей синхронизации.
 
 > Важно: это командный LAN-сервер, а не публичный интернет-хостинг. Для доступа из интернета потребуется размещение сервера на VPS/хостинге и нормальная серверная авторизация.
+
+
+## Development and GPT workflow
+
+See DEVELOPMENT.md for architecture, safe code/data workflow and local test commands.
+
+For production data changes use the protected Supabase admin API described in API_CONTRACT.md; do not edit JSON by hand.
+
+GPT_HANDOFF.md contains the concise continuation context for another ChatGPT.
+
+GitHub Pages deployment is defined in .github/workflows/pages.yml. Supabase data changes do not require a Pages deploy.
