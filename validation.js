@@ -7,7 +7,7 @@
       if(!uniq(b.players,'player_id'))return {ok:false,error:'duplicate/invalid player_id'};
       if(!uniq(b.maps,'map_id'))return {ok:false,error:'duplicate/invalid map_id'};
       if(!uniq(b.matches,'match_id'))return {ok:false,error:'duplicate/invalid match_id'};
-      if(b.players.some(p=>typeof p.player_id!=='string'||!/^\\p{L}+/u.test(p.player_id)))return {ok:false,error:'invalid player_id'};
+      if(b.players.some(p=>typeof p.player_id!=='string'||!/^[\\p{L}\\p{N}_.: -]{1,64}$/u.test(p.player_id)))return {ok:false,error:'invalid player_id'};
       const pids=new Set(b.players.map(p=>p.player_id)),mids=new Set(b.matches.map(m=>m.match_id));
       const mapById=new Map(b.maps.map(m=>[m.map_id,m])),listedMapIds=new Set();
       for(const m of b.matches)for(const id of (Array.isArray(m.map_ids)?m.map_ids:[])){if(listedMapIds.has(id))return {ok:false,error:'map belongs to multiple matches'};listedMapIds.add(id)}
