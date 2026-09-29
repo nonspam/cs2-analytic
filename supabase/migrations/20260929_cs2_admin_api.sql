@@ -3,6 +3,8 @@ create table if not exists public.cs2_operations (
  detail jsonb not null default '{}'::jsonb, status text not null default 'committed', result jsonb not null default '{}'::jsonb,
  created_at timestamptz not null default now()
 );
+alter table public.cs2_operations add column if not exists status text not null default 'committed';
+alter table public.cs2_operations add column if not exists result jsonb not null default '{}'::jsonb;
 alter table public.cs2_operations enable row level security;
 revoke all on public.cs2_operations from anon, authenticated;
 grant select on public.cs2_operations to authenticated;
@@ -14,6 +16,8 @@ create table if not exists public.cs2_audit_log (
  detail jsonb not null default '{}'::jsonb, status text not null default 'committed', result jsonb not null default '{}'::jsonb,
  created_at timestamptz not null default now()
 );
+alter table public.cs2_audit_log add column if not exists status text not null default 'committed';
+alter table public.cs2_audit_log add column if not exists result jsonb not null default '{}'::jsonb;
 alter table public.cs2_audit_log enable row level security;
 revoke all on public.cs2_audit_log from anon, authenticated;
 grant select on public.cs2_audit_log to authenticated;
