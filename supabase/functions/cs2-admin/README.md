@@ -1,0 +1,1 @@
+Set Edge Function secrets CS2_ADMIN_API_KEY and SUPABASE_BACKEND_KEY in the Supabase project. Do not commit either value. Deploy with JWT verification disabled because this function authenticates with its own API key.
