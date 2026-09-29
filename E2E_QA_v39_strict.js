@@ -1,0 +1,37 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const root=__dirname;
+const DB0={players:JSON.parse(fs.readFileSync(root+'/data/players.json')).players,maps:JSON.parse(fs.readFileSync(root+'/data/maps.json')).maps,matches:JSON.parse(fs.readFileSync(root+'/data/matches.json')).matches,aliases:JSON.parse(fs.readFileSync(root+'/data/aliases.json')).aliases};
+class LS{constructor(){this.m=new Map()}getItem(k){return this.m.has(k)?this.m.get(k):null}setItem(k,v){this.m.set(k,String(v))}removeItem(k){this.m.delete(k)}}
+const els={}; const generic=()=>({value:'',innerHTML:'',textContent:'',className:'',classList:{add(){},remove(){},toggle(){}},style:{},onclick:null,insertAdjacentHTML(){},remove(){},querySelector(){return null},querySelectorAll(){return []},addEventListener(){}});
+const document={querySelector:s=>els[s]||generic(),querySelectorAll:s=>[],getElementById:s=>els['#'+s]||(s==='toast'?els['#toast']||(els['#toast']={textContent:'',classList:{add(){},remove(){}}}):generic()),createElement:tag=>({tag,click(){},set href(v){this._href=v},get href(){return this._href},classList:{add(){},remove(){}},appendChild(){}}),body:{appendChild(){}}};
+const localStorage=new LS(); const window={}; const location={reload(){window.__reloaded=true}};
+const ctx={window,document,localStorage,location,console,URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},Blob:class{constructor(parts){this.parts=parts}},FileReader:class{},setTimeout,clearTimeout,Date,JSON,Math,Number,String,RegExp,Set,Map,Promise};
+vm.createContext(ctx);
+let code=fs.readFileSync(root+'/app.js','utf8').replace(/\nload\(\);\s*$/,'\n'); code+='\nthis.__cs5={DB,BASE,state,validateBase,activePlayers,activeMatches,latestMatch,latestDetailedMap,matchMaps,saveGame,saveMatchEdit,archiveMatch,restoreMatch,aggregate,index,impact,stability,form,exportBackup,importBackup};';
+vm.runInContext(code,ctx,{filename:'app.js'}); const C=ctx.__cs5, DB=C.DB, BASE=C.BASE, state=C.state;
+function set(id,v){els['#'+id]={value:v}}
+function av(x,m){assert.ok(x,m)}
+Object.assign(DB,JSON.parse(JSON.stringify(DB0))); Object.assign(BASE,JSON.parse(JSON.stringify(DB0))); state.tab='settings';
+assert(C.validateBase(DB)); assert.equal(DB.maps.length,66); assert.equal(DB.matches.length,32); assert.equal(C.activeMatches().length,32);
+C.closeModal=()=>{}; C.render=()=>{}; C.toast=m=>{ctx.__toast=String(m)};
+const ids=C.activePlayers().slice(0,10).map(p=>p.player_id); assert.equal(ids.length,10);
+const before=ids.map(id=>{const a=C.aggregate(id);return {id,k:a.k,d:a.d,a:a.a,idx:C.index(id),imp:C.impact(id),form:C.form(id).form,st:C.stability(id).score}});
+set('newFormat','BO1'); set('newMaps','mirage'); set('newPlayedAt','2026-09-28T20:00'); set('newScore','13:10'); set('newRows',ids.map(p=>`${p} 20/15/5`).join('\n')); C.saveGame();
+assert.equal(DB.matches.length,33); assert.equal(DB.maps.length,67); assert(C.validateBase(DB));
+let lm=C.latestMatch(), lmap=C.latestDetailedMap(lm); assert.equal(lmap.score.team_a,13); assert.equal(lmap.score.team_b,10); assert.equal(lmap.player_stats.length,10); assert.equal(lmap.player_stats.reduce((s,x)=>s+x.kills,0),200);
+const afterCreate=ids.map(id=>({id,k:C.aggregate(id).k,d:C.aggregate(id).d,a:C.aggregate(id).a,idx:C.index(id),imp:C.impact(id),form:C.form(id).form,st:C.stability(id).score}));
+for(let i=0;i<before.length;i++){assert.equal(afterCreate[i].k,before[i].k+20);assert.equal(afterCreate[i].d,before[i].d+15);assert.equal(afterCreate[i].a,before[i].a+5);}
+set('editPlayedAt','2026-09-28T21:00'); set('editScore','14:12'); set('editRows',ids.map(p=>`${p} 21/14/6`).join('\n')); C.saveMatchEdit(lm.match_id); lm=C.latestMatch(); lmap=C.latestDetailedMap(lm); assert.equal(lmap.score.team_a,14); assert.equal(lmap.score.team_b,12); assert.equal(lmap.player_stats.reduce((s,x)=>s+x.kills,0),210);
+const afterEdit=ids.map(id=>C.aggregate(id)); for(let i=0;i<afterEdit.length;i++){assert.equal(afterEdit[i].k,before[i].k+21);assert.equal(afterEdit[i].d,before[i].d+14);assert.equal(afterEdit[i].a,before[i].a+6)}
+set('newFormat','BO3_COMPACT'); set('newMaps','nuke,dust2,mirage'); set('newPlayedAt','2026-09-28T22:00'); set('newScore','2:1'); set('newRows',ids.map(p=>`${p} 30/25/8`).join('\n')); C.saveGame(); assert.equal(DB.matches.length,34); assert.equal(DB.maps.length,70); const cm=C.latestMatch(); assert.equal(cm.source_kind,'compact_bo3'); assert.equal(cm.series_aggregate_stats.length,10); assert.equal(C.matchMaps(cm).filter(x=>x.stats_available).length,0); assert(C.validateBase(DB));
+const compactAgg=C.aggregate(ids[0]); assert.equal(compactAgg.maps,70);
+C.archiveMatch(cm.match_id); assert(!C.activeMatches().some(x=>x.match_id===cm.match_id)); C.restoreMatch(cm.match_id); assert(C.activeMatches().some(x=>x.match_id===cm.match_id)); assert(C.validateBase(DB));
+C.archiveMatch(lm.match_id); assert(!C.activeMatches().some(x=>x.match_id===lm.match_id)); const archivedAgg=C.aggregate(ids[0]); assert.equal(archivedAgg.k,before[0].k+30); C.restoreMatch(lm.match_id); assert(C.activeMatches().some(x=>x.match_id===lm.match_id)); const restoredAgg=C.aggregate(ids[0]); assert.equal(restoredAgg.k,before[0].k+21+30); assert(C.validateBase(DB));
+const ops=JSON.parse(localStorage.getItem('cs5_additions')); assert.equal(ops.length,20);
+const replay=JSON.parse(JSON.stringify(DB0)); for(const op of ops){if(op.kind==='map')replay.maps.push(op.map);else if(op.kind==='match')replay.matches.push(op.match);else if(op.kind==='player')replay.players.push(op.player);else if(op.kind==='aliases')Object.assign(replay.aliases,op.aliases);else if(op.kind==='player_patch'){const q=replay.players.find(x=>x.player_id===op.player_id);av(q,'replay player');Object.assign(q,op.patch)}else if(op.kind==='match_patch'){const q=replay.matches.find(x=>x.match_id===op.match_id);av(q,'replay match');Object.assign(q,op.patch)}else if(op.kind==='map_patch'){const q=replay.maps.find(x=>x.map_id===op.map_id);av(q,'replay map');Object.assign(q,op.patch)}} assert(C.validateBase(replay)); assert.deepStrictEqual(replay,JSON.parse(JSON.stringify(DB)));
+// Backup export must be BASE + journal, never hydrated DB.
+let payload; let exportedText=''; ctx.Blob=class{constructor(parts){this.parts=parts; exportedText=String(parts[0])}}; ctx.document.createElement=()=>({click(){},set href(v){this._href=v},get href(){return this._href}}); C.exportBackup(); payload=JSON.parse(exportedText); assert.equal(payload.version,'site-v39'); assert.equal(payload.base.matches.length,32); assert.equal(payload.localStorage.length,20);
+// Backup import validation: valid journal accepted; malformed journal rejected without mutation.
+const oldAdd=localStorage.getItem('cs5_additions'); const oldBase=localStorage.getItem('cs5_base_override'); const bad={base:payload.base,localStorage:[{kind:'match_patch',match_id:'missing',patch:{}}],audit:[]};
+ctx.FileReader=class{readAsText(){this.onload({target:{result:JSON.stringify(bad)}})}}; C.importBackup({}); assert.equal(localStorage.getItem('cs5_additions'),oldAdd); assert.equal(localStorage.getItem('cs5_base_override'),oldBase);
+console.log(JSON.stringify({PASS:true,baseline:{maps:66,matches:32,players:11},afterCreate:{maps:67,matches:33,totalKillsOnAddedMap:200},afterEdit:{score:'14:12',totalKillsOnAddedMap:210},compact:{maps:70,matches:34,aggregateOnly:true},archiveRestore:true,derivedStatsChanged:true,derivedStatsRestored:true,journalOps:20,replayExact:true,backupBaseMatches:32,backupJournalOps:20,invalidBackupRollback:true},null,2));

@@ -1,0 +1,5776 @@
+{
+  "players": [
+    {
+      "player_id": "gletcher",
+      "display_name": "gletcher",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "m0nesy pro 2004",
+        "glechter",
+        "gletcher"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 1253,
+        "d": 866,
+        "a": 329
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "DaDa_VoVa",
+      "display_name": "DaDa_VoVa",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "DaDa_VoVa"
+      ],
+      "frozen_source_totals": {
+        "maps": 24,
+        "k": 428,
+        "d": 350,
+        "a": 110
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "donater",
+      "display_name": "donater",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "donk666 pro 2004",
+        "daynchel",
+        "꧁ĐÖŅÄȚËŖ꧂",
+        "DONATER",
+        "donater"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 1143,
+        "d": 1036,
+        "a": 420
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "подушка пердушка",
+      "display_name": "подушка пердушка",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "ebatel v popo4ky",
+        "подушка пердужка",
+        "подушка пердушка",
+        "подушка пер..."
+      ],
+      "frozen_source_totals": {
+        "maps": 50,
+        "k": 771,
+        "d": 735,
+        "a": 179
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "vorenxy",
+      "display_name": "vorenxy",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "zverichavchika18",
+        "vorynixy"
+      ],
+      "frozen_source_totals": {
+        "maps": 47,
+        "k": 747,
+        "d": 711,
+        "a": 240
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "Patr1k",
+      "display_name": "Patr1k",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "XANTARESSSSSS",
+        "XANTARESSSSSSw",
+        "Patr1k",
+        "patr1k"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 946,
+        "d": 1025,
+        "a": 287
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "bigchungus",
+      "display_name": "bigchungus",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "ZverTualeta",
+        "bigchungus",
+        "bυchungus"
+      ],
+      "frozen_source_totals": {
+        "maps": 32,
+        "k": 470,
+        "d": 533,
+        "a": 158
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "gamiersanek",
+      "display_name": "gamiersanek",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "gamiersanek",
+        "gamersanek"
+      ],
+      "frozen_source_totals": {
+        "maps": 27,
+        "k": 358,
+        "d": 407,
+        "a": 119
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "эгоист",
+      "display_name": "эгоист",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "Zywoo pro 2004",
+        "эго1st",
+        "эгo1st",
+        "эгоист"
+      ],
+      "frozen_source_totals": {
+        "maps": 63,
+        "k": 904,
+        "d": 1045,
+        "a": 313
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "пяточки",
+      "display_name": "пяточки",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "s1mple pro 2004",
+        "cristina ronoldu",
+        "glinomessi",
+        "питочки"
+      ],
+      "frozen_source_totals": {
+        "maps": 59,
+        "k": 812,
+        "d": 966,
+        "a": 272
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "дядя",
+      "display_name": "дядя",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "дядя"
+      ],
+      "frozen_source_totals": {
+        "maps": 28,
+        "k": 378,
+        "d": 451,
+        "a": 116
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    }
+  ],
+  "maps": [
+    {
+      "map_id": "map_001",
+      "match_id": "match_001",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 11,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 21,
+          "deaths": 18,
+          "assists": 7,
+          "source_line": 29
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 16,
+          "deaths": 22,
+          "assists": 7,
+          "source_line": 33
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 37
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 18,
+          "deaths": 20,
+          "assists": 12,
+          "source_line": 53
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 15,
+          "assists": 6,
+          "source_line": 57
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 23,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 61
+        },
+        {
+          "raw_name": "XANTARESSSSSSw",
+          "player_id": "Patr1k",
+          "kills": 23,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 65
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 69
+        }
+      ],
+      "source_header": "bo3   0:2 mirage-dust2"
+    },
+    {
+      "map_id": "map_002",
+      "match_id": "match_001",
+      "map_index": 2,
+      "map": "dust2",
+      "score": {
+        "team_a": 8,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 26,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 85
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 15,
+          "deaths": 16,
+          "assists": 5,
+          "source_line": 89
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 93
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 21,
+          "deaths": 13,
+          "assists": 4,
+          "source_line": 113
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 117
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 8,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 121
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 15,
+          "assists": 6,
+          "source_line": 125
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 20,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 129
+        }
+      ],
+      "source_header": "bo3   0:2 mirage-dust2"
+    },
+    {
+      "map_id": "map_003",
+      "match_id": "match_002",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 5
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 10,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 157
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 16,
+          "deaths": 8,
+          "assists": 1,
+          "source_line": 161
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 16,
+          "deaths": 9,
+          "assists": 2,
+          "source_line": 165
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 18,
+          "deaths": 13,
+          "assists": 5,
+          "source_line": 169
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 9,
+          "assists": 4,
+          "source_line": 173
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 7,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 189
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 12,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 193
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 19,
+          "deaths": 16,
+          "assists": 1,
+          "source_line": 197
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 7,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 201
+        }
+      ],
+      "source_header": "bo3 2:0    mirage-inferno"
+    },
+    {
+      "map_id": "map_004",
+      "match_id": "match_002",
+      "map_index": 2,
+      "map": "inferno",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 27,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 221
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 22,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 225
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 21,
+          "deaths": 19,
+          "assists": 10,
+          "source_line": 229
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 4,
+          "source_line": 233
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 11,
+          "deaths": 19,
+          "assists": 9,
+          "source_line": 237
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 14,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 253
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 30,
+          "deaths": 18,
+          "assists": 7,
+          "source_line": 257
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 21,
+          "assists": 11,
+          "source_line": 261
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 24,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 265
+        }
+      ],
+      "source_header": "bo3 2:0    mirage-inferno"
+    },
+    {
+      "map_id": "map_005",
+      "match_id": "match_003",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 9,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 20,
+          "assists": 8,
+          "source_line": 293
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 9,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 297
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 20,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 301
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 22,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 305
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 10,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 309
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 12,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 325
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 19,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 329
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 20,
+          "deaths": 17,
+          "assists": 10,
+          "source_line": 333
+        }
+      ],
+      "source_header": "bo3 1:1    mirage-anubis"
+    },
+    {
+      "map_id": "map_006",
+      "match_id": "match_003",
+      "map_index": 2,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 9
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 14,
+          "deaths": 18,
+          "assists": 6,
+          "source_line": 349
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 14,
+          "deaths": 16,
+          "assists": 5,
+          "source_line": 353
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 13,
+          "deaths": 19,
+          "assists": 7,
+          "source_line": 357
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 14,
+          "deaths": 16,
+          "assists": 9,
+          "source_line": 361
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 30,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 365
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 18,
+          "assists": 9,
+          "source_line": 381
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 1,
+          "source_line": 385
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 16,
+          "assists": 9,
+          "source_line": 389
+        }
+      ],
+      "source_header": "bo3 1:1    mirage-anubis"
+    },
+    {
+      "map_id": "map_007",
+      "match_id": "match_004",
+      "map_index": 1,
+      "map": "train",
+      "score": {
+        "team_a": 16,
+        "team_b": 12
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 24,
+          "deaths": 17,
+          "assists": 8,
+          "source_line": 409
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 20,
+          "deaths": 19,
+          "assists": 6,
+          "source_line": 413
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 14,
+          "deaths": 18,
+          "assists": 4,
+          "source_line": 417
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 28,
+          "deaths": 16,
+          "assists": 5,
+          "source_line": 421
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 22,
+          "deaths": 20,
+          "assists": 6,
+          "source_line": 425
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 24,
+          "assists": 3,
+          "source_line": 441
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 13,
+          "deaths": 24,
+          "assists": 7,
+          "source_line": 445
+        }
+      ],
+      "source_header": "bo1     train"
+    },
+    {
+      "map_id": "map_008",
+      "match_id": "match_005",
+      "map_index": 1,
+      "map": "dust2",
+      "score": {
+        "team_a": 16,
+        "team_b": 14
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 22,
+          "assists": 7,
+          "source_line": 473
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 9,
+          "source_line": 477
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 19,
+          "deaths": 23,
+          "assists": 8,
+          "source_line": 493
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 23,
+          "deaths": 22,
+          "assists": 5,
+          "source_line": 497
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 17,
+          "deaths": 23,
+          "assists": 5,
+          "source_line": 501
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 25,
+          "deaths": 25,
+          "assists": 9,
+          "source_line": 505
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 12,
+          "deaths": 22,
+          "assists": 6,
+          "source_line": 509
+        }
+      ],
+      "source_header": "bo3 0:2    dus2-mirage"
+    },
+    {
+      "map_id": "map_009",
+      "match_id": "match_005",
+      "map_index": 2,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 6
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 8,
+          "deaths": 11,
+          "assists": 3,
+          "source_line": 525
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 17,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 529
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 21,
+          "deaths": 14,
+          "assists": 4,
+          "source_line": 545
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 549
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 553
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 11,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 557
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 561
+        }
+      ],
+      "source_header": "bo3 0:2    dus2-mirage"
+    },
+    {
+      "map_id": "map_010",
+      "match_id": "match_006",
+      "map_index": 1,
+      "map": "ancient",
+      "score": {
+        "team_a": 13,
+        "team_b": 1
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 6,
+          "deaths": 6,
+          "assists": 1,
+          "source_line": 581
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 4,
+          "assists": 2,
+          "source_line": 585
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 4,
+          "source_line": 589
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 11,
+          "deaths": 4,
+          "assists": 4,
+          "source_line": 593
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 3,
+          "source_line": 597
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 2,
+          "deaths": 9,
+          "assists": 3,
+          "source_line": 613
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 4,
+          "deaths": 8,
+          "assists": 1,
+          "source_line": 617
+        }
+      ],
+      "source_header": "bo1   ancient"
+    },
+    {
+      "map_id": "map_011",
+      "match_id": "match_007",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 3
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 645
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 11,
+          "deaths": 10,
+          "assists": 4,
+          "source_line": 649
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 9,
+          "deaths": 9,
+          "assists": 1,
+          "source_line": 653
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 20,
+          "deaths": 11,
+          "assists": 3,
+          "source_line": 657
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 6,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 673
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 8,
+          "deaths": 12,
+          "assists": 1,
+          "source_line": 677
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 12,
+          "assists": 1,
+          "source_line": 681
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 13,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 685
+        }
+      ],
+      "source_header": "bo3 1:2   mirage-mirage-dust2"
+    },
+    {
+      "map_id": "map_012",
+      "match_id": "match_007",
+      "map_index": 2,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 705
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 22,
+          "deaths": 15,
+          "assists": 12,
+          "source_line": 709
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 19,
+          "deaths": 19,
+          "assists": 2,
+          "source_line": 713
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 13,
+          "deaths": 18,
+          "assists": 6,
+          "source_line": 717
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 30,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 733
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 22,
+          "deaths": 19,
+          "assists": 8,
+          "source_line": 737
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 13,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 741
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 18,
+          "assists": 6,
+          "source_line": 745
+        }
+      ],
+      "source_header": "bo3 1:2   mirage-mirage-dust2"
+    },
+    {
+      "map_id": "map_013",
+      "match_id": "match_007",
+      "map_index": 3,
+      "map": "dust2",
+      "score": {
+        "team_a": 16,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 17,
+          "deaths": 19,
+          "assists": 10,
+          "source_line": 761
+        },
+        {
+          "raw_name": "donk666 pro 2004",
+          "player_id": "donater",
+          "kills": 20,
+          "deaths": 22,
+          "assists": 7,
+          "source_line": 765
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 21,
+          "deaths": 22,
+          "assists": 11,
+          "source_line": 769
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 15,
+          "deaths": 22,
+          "assists": 1,
+          "source_line": 773
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 35,
+          "deaths": 17,
+          "assists": 8,
+          "source_line": 789
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 793
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 18,
+          "deaths": 22,
+          "assists": 6,
+          "source_line": 797
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 26,
+          "deaths": 17,
+          "assists": 8,
+          "source_line": 801
+        }
+      ],
+      "source_header": "bo3 1:2   mirage-mirage-dust2"
+    },
+    {
+      "map_id": "map_014",
+      "match_id": "match_008",
+      "map_index": 1,
+      "map": "dust2",
+      "score": {
+        "team_a": 6,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 13,
+          "deaths": 15,
+          "assists": 8,
+          "source_line": 817
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 8,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 819
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 3,
+          "source_line": 821
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 829
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 13,
+          "deaths": 11,
+          "assists": 6,
+          "source_line": 831
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 10,
+          "deaths": 11,
+          "assists": 9,
+          "source_line": 833
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 25,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 835
+        }
+      ],
+      "source_header": "bo3 1:2   dust2-inferno-mirage"
+    },
+    {
+      "map_id": "map_015",
+      "match_id": "match_008",
+      "map_index": 2,
+      "map": "inferno",
+      "score": {
+        "team_a": 13,
+        "team_b": 9
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 16,
+          "deaths": 13,
+          "assists": 6,
+          "source_line": 845
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 23,
+          "deaths": 12,
+          "assists": 4,
+          "source_line": 847
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 24,
+          "deaths": 14,
+          "assists": 7,
+          "source_line": 849
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 1,
+          "source_line": 857
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 17,
+          "assists": 9,
+          "source_line": 859
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 861
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 7,
+          "deaths": 18,
+          "assists": 0,
+          "source_line": 863
+        }
+      ],
+      "source_header": "bo3 1:2   dust2-inferno-mirage"
+    },
+    {
+      "map_id": "map_016",
+      "match_id": "match_008",
+      "map_index": 3,
+      "map": "mirage",
+      "score": {
+        "team_a": 8,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 871
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 16,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 873
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 19,
+          "deaths": 16,
+          "assists": 2,
+          "source_line": 875
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 23,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 883
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 12,
+          "source_line": 885
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 7,
+          "source_line": 887
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 16,
+          "assists": 8,
+          "source_line": 889
+        }
+      ],
+      "source_header": "bo3 1:2   dust2-inferno-mirage"
+    },
+    {
+      "map_id": "map_017",
+      "match_id": "match_009",
+      "map_index": 1,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 3
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 15,
+          "deaths": 9,
+          "assists": 3,
+          "source_line": 903
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 26,
+          "deaths": 5,
+          "assists": 4,
+          "source_line": 905
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 10,
+          "deaths": 12,
+          "assists": 6,
+          "source_line": 907
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 10,
+          "assists": 4,
+          "source_line": 909
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 11,
+          "assists": 2,
+          "source_line": 911
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 8,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 921
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 923
+        }
+      ],
+      "source_header": "bo3 2:0 Anubis-dust2"
+    },
+    {
+      "map_id": "map_018",
+      "match_id": "match_009",
+      "map_index": 2,
+      "map": "dust2",
+      "score": {
+        "team_a": 13,
+        "team_b": 8
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 14,
+          "deaths": 12,
+          "assists": 0,
+          "source_line": 931
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 28,
+          "deaths": 13,
+          "assists": 5,
+          "source_line": 933
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 11,
+          "source_line": 935
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 21,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 937
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 15,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 939
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 11,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 947
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 8,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 949
+        }
+      ],
+      "source_header": "bo3 2:0 Anubis-dust2"
+    },
+    {
+      "map_id": "map_019",
+      "match_id": "match_010",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 16,
+        "team_b": 14
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 21,
+          "deaths": 24,
+          "assists": 9,
+          "source_line": 961
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 20,
+          "assists": 5,
+          "source_line": 963
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 17,
+          "deaths": 19,
+          "assists": 6,
+          "source_line": 965
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 29,
+          "deaths": 22,
+          "assists": 7,
+          "source_line": 967
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 25,
+          "deaths": 23,
+          "assists": 4,
+          "source_line": 975
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 23,
+          "assists": 5,
+          "source_line": 977
+        }
+      ],
+      "source_header": "bo1 mirage"
+    },
+    {
+      "map_id": "map_020",
+      "match_id": "match_011",
+      "map_index": 1,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 8
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 22,
+          "deaths": 9,
+          "assists": 4,
+          "source_line": 993
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 15,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 995
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 14,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 997
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 16,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 999
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 1009
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 11,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 1011
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 10,
+          "deaths": 19,
+          "assists": 3,
+          "source_line": 1013
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 1015
+        }
+      ],
+      "source_header": "bo3 2:0   Anubis-dust2"
+    },
+    {
+      "map_id": "map_021",
+      "match_id": "match_011",
+      "map_index": 2,
+      "map": "dust2",
+      "score": {
+        "team_a": 13,
+        "team_b": 4
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 11,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 1025
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 21,
+          "deaths": 8,
+          "assists": 4,
+          "source_line": 1027
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 10,
+          "deaths": 13,
+          "assists": 10,
+          "source_line": 1029
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 20,
+          "deaths": 8,
+          "assists": 6,
+          "source_line": 1031
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 7,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 1039
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 5,
+          "deaths": 17,
+          "assists": 1,
+          "source_line": 1041
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 1043
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 15,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 1045
+        }
+      ],
+      "source_header": "bo3 2:0   Anubis-dust2"
+    },
+    {
+      "map_id": "map_022",
+      "match_id": "match_012",
+      "map_index": 1,
+      "map": "vertigo",
+      "score": {
+        "team_a": 13,
+        "team_b": 9
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 17,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 1061
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 14,
+          "deaths": 18,
+          "assists": 1,
+          "source_line": 1063
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 21,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 1065
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 19,
+          "deaths": 17,
+          "assists": 3,
+          "source_line": 1067
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 21,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 1075
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 6,
+          "deaths": 19,
+          "assists": 9,
+          "source_line": 1077
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 1079
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 15,
+          "deaths": 12,
+          "assists": 7,
+          "source_line": 1081
+        }
+      ],
+      "source_header": "bo3 1:2   vertigo-overpass-nuke"
+    },
+    {
+      "map_id": "map_023",
+      "match_id": "match_012",
+      "map_index": 2,
+      "map": "overpass",
+      "score": {
+        "team_a": 4,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 8,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 1089
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 1091
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 2,
+          "source_line": 1093
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 11,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 1095
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 16,
+          "deaths": 10,
+          "assists": 5,
+          "source_line": 1105
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 7,
+          "deaths": 11,
+          "assists": 2,
+          "source_line": 1107
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 7,
+          "assists": 3,
+          "source_line": 1109
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 20,
+          "deaths": 12,
+          "assists": 4,
+          "source_line": 1111
+        }
+      ],
+      "source_header": "bo3 1:2   vertigo-overpass-nuke"
+    },
+    {
+      "map_id": "map_024",
+      "match_id": "match_012",
+      "map_index": 3,
+      "map": "nuke",
+      "score": {
+        "team_a": 7,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 14,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 1121
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 20,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 1123
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 22,
+          "deaths": 12,
+          "assists": 0,
+          "source_line": 1125
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 9,
+          "deaths": 18,
+          "assists": 4,
+          "source_line": 1127
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 7,
+          "source_line": 1135
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 1137
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 9,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 1139
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 15,
+          "deaths": 18,
+          "assists": 7,
+          "source_line": 1141
+        }
+      ],
+      "source_header": "bo3 1:2   vertigo-overpass-nuke"
+    },
+    {
+      "map_id": "map_025",
+      "match_id": "match_013",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 11,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "YAujeNEdevstvini",
+          "player_id": null,
+          "kills": 19,
+          "deaths": 16,
+          "assists": 8,
+          "source_line": 1159
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 1161
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 15,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 1163
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 17,
+          "deaths": 21,
+          "assists": 5,
+          "source_line": 1165
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 11,
+          "deaths": 17,
+          "assists": 9,
+          "source_line": 1173
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 26,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 1175
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 21,
+          "deaths": 19,
+          "assists": 3,
+          "source_line": 1177
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 25,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 1179
+        }
+      ],
+      "source_header": "bo3 1:2  mirage-dust-Anubis"
+    },
+    {
+      "map_id": "map_026",
+      "match_id": "match_013",
+      "map_index": 2,
+      "map": "dust2",
+      "score": {
+        "team_a": 19,
+        "team_b": 16
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 25,
+          "deaths": 26,
+          "assists": 13,
+          "source_line": 1187
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 26,
+          "deaths": 24,
+          "assists": 7,
+          "source_line": 1189
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 33,
+          "deaths": 21,
+          "assists": 10,
+          "source_line": 1191
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 46,
+          "deaths": 24,
+          "assists": 11,
+          "source_line": 1199
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 25,
+          "deaths": 28,
+          "assists": 10,
+          "source_line": 1201
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 19,
+          "deaths": 30,
+          "assists": 10,
+          "source_line": 1203
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 21,
+          "deaths": 32,
+          "assists": 10,
+          "source_line": 1205
+        }
+      ],
+      "source_header": "bo3 1:2  mirage-dust-Anubis"
+    },
+    {
+      "map_id": "map_027",
+      "match_id": "match_013",
+      "map_index": 3,
+      "map": "anubis",
+      "score": {
+        "team_a": 9,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 19,
+          "assists": 2,
+          "source_line": 1213
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 12,
+          "assists": 2,
+          "source_line": 1215
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 1217
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 16,
+          "assists": 7,
+          "source_line": 1225
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 18,
+          "deaths": 13,
+          "assists": 4,
+          "source_line": 1227
+        },
+        {
+          "raw_name": "RomaFoma5",
+          "player_id": null,
+          "kills": 22,
+          "deaths": 14,
+          "assists": 7,
+          "source_line": 1229
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 1231
+        }
+      ],
+      "source_header": "bo3 1:2  mirage-dust-Anubis"
+    },
+    {
+      "map_id": "map_028",
+      "match_id": "match_014",
+      "map_index": 1,
+      "map": "inferno",
+      "score": {
+        "team_a": 14,
+        "team_b": 16
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 25,
+          "deaths": 26,
+          "assists": 8,
+          "source_line": 1247
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 33,
+          "deaths": 22,
+          "assists": 6,
+          "source_line": 1249
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 23,
+          "deaths": 19,
+          "assists": 7,
+          "source_line": 1257
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 21,
+          "deaths": 23,
+          "assists": 17,
+          "source_line": 1259
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 3,
+          "source_line": 1261
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 29,
+          "deaths": 23,
+          "assists": 3,
+          "source_line": 1263
+        }
+      ],
+      "source_header": "bo1 0:1  inferno"
+    },
+    {
+      "map_id": "map_029",
+      "match_id": "match_015",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 5,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 1277
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 8,
+          "source_line": 1279
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 6,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 1281
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 1283
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 10,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 1291
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 23,
+          "deaths": 9,
+          "assists": 5,
+          "source_line": 1293
+        },
+        {
+          "raw_name": "ebatel v popo4ky",
+          "player_id": "подушка пердушка",
+          "kills": 19,
+          "deaths": 9,
+          "assists": 0,
+          "source_line": 1295
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 2,
+          "source_line": 1297
+        }
+      ],
+      "source_header": "bo1 0:1 mirage"
+    },
+    {
+      "map_id": "map_030",
+      "match_id": "match_016",
+      "map_index": 1,
+      "map": "anubis",
+      "score": {
+        "team_a": 4,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 11,
+          "deaths": 16,
+          "assists": 2,
+          "source_line": 1311
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 8,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 1313
+        },
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 1315
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 10,
+          "deaths": 8,
+          "assists": 7,
+          "source_line": 1323
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 13,
+          "deaths": 12,
+          "assists": 3,
+          "source_line": 1325
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 18,
+          "deaths": 10,
+          "assists": 3,
+          "source_line": 1327
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 23,
+          "deaths": 8,
+          "assists": 5,
+          "source_line": 1329
+        }
+      ],
+      "source_header": "bo3 0:2   anubis-mirage"
+    },
+    {
+      "map_id": "map_031",
+      "match_id": "match_016",
+      "map_index": 2,
+      "map": "mirage",
+      "score": {
+        "team_a": 2,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "XANTARESSSSSS",
+          "player_id": "Patr1k",
+          "kills": 15,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 1337
+        },
+        {
+          "raw_name": "s1mple pro 2004",
+          "player_id": "пяточки",
+          "kills": 5,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 1339
+        },
+        {
+          "raw_name": "Zywoo pro 2004",
+          "player_id": "эгоист",
+          "kills": 6,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 1341
+        },
+        {
+          "raw_name": "m0nesy pro 2004",
+          "player_id": "gletcher",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 6,
+          "source_line": 1349
+        },
+        {
+          "raw_name": "ZverTualeta",
+          "player_id": "bigchungus",
+          "kills": 15,
+          "deaths": 8,
+          "assists": 4,
+          "source_line": 1351
+        },
+        {
+          "raw_name": "zverichavchika18",
+          "player_id": "vorenxy",
+          "kills": 17,
+          "deaths": 8,
+          "assists": 9,
+          "source_line": 1353
+        },
+        {
+          "raw_name": "daynchel",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 9,
+          "assists": 4,
+          "source_line": 1355
+        }
+      ],
+      "source_header": "bo3 0:2   anubis-mirage"
+    },
+    {
+      "map_id": "map_032",
+      "match_id": "match_017",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 5
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 22,
+          "deaths": 9,
+          "assists": 6,
+          "source_line": 1365
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 20,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 1369
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 8,
+          "deaths": 12,
+          "assists": 9,
+          "source_line": 1373
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 16,
+          "deaths": 16,
+          "assists": 6,
+          "source_line": 1381
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 8,
+          "source_line": 1385
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 6,
+          "deaths": 14,
+          "assists": 0,
+          "source_line": 1389
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 11,
+          "deaths": 16,
+          "assists": 4,
+          "source_line": 1393
+        }
+      ],
+      "source_header": "bo1    1:0   mirage"
+    },
+    {
+      "map_id": "map_033",
+      "match_id": "match_018",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 7
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 22,
+          "deaths": 7,
+          "assists": 6,
+          "source_line": 1409
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 19,
+          "deaths": 11,
+          "assists": 3,
+          "source_line": 1413
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 10,
+          "assists": 4,
+          "source_line": 1417
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 9,
+          "assists": 3,
+          "source_line": 1421
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 12,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 1437
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 15,
+          "assists": 6,
+          "source_line": 1445
+        }
+      ],
+      "source_header": "bo3      2:0    mirage - nuke"
+    },
+    {
+      "map_id": "map_034",
+      "match_id": "match_018",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 13,
+        "team_b": 7
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 1461
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 5,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 1465
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 22,
+          "deaths": 10,
+          "assists": 7,
+          "source_line": 1469
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 1473
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 13,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 1489
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 8,
+          "deaths": 17,
+          "assists": 1,
+          "source_line": 1493
+        }
+      ],
+      "source_header": "bo3      2:0    mirage - nuke"
+    },
+    {
+      "map_id": "map_035",
+      "match_id": "match_019",
+      "map_index": 1,
+      "map": "nuke",
+      "score": {
+        "team_a": 22,
+        "team_b": 20
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 45,
+          "deaths": 27,
+          "assists": 12,
+          "source_line": 1525
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 29,
+          "deaths": 26,
+          "assists": 16,
+          "source_line": 1529
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 26,
+          "deaths": 34,
+          "assists": 14,
+          "source_line": 1533
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 26,
+          "deaths": 27,
+          "assists": 7,
+          "source_line": 1537
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 29,
+          "deaths": 24,
+          "assists": 5,
+          "source_line": 1541
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 42,
+          "deaths": 31,
+          "assists": 12,
+          "source_line": 1557
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 23,
+          "deaths": 32,
+          "assists": 4,
+          "source_line": 1565
+        }
+      ],
+      "source_header": "bo3  2:0    nuke-dust2"
+    },
+    {
+      "map_id": "map_036",
+      "match_id": "match_019",
+      "map_index": 2,
+      "map": "dust2",
+      "score": {
+        "team_a": 11,
+        "team_b": 2
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 14,
+          "deaths": 3,
+          "assists": 2,
+          "source_line": 1585
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 13,
+          "deaths": 4,
+          "assists": 5,
+          "source_line": 1589
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 9,
+          "deaths": 8,
+          "assists": 4,
+          "source_line": 1593
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 7,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 1597
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 14,
+          "deaths": 3,
+          "assists": 1,
+          "source_line": 1601
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 4,
+          "deaths": 12,
+          "assists": 3,
+          "source_line": 1617
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 3,
+          "deaths": 12,
+          "assists": 2,
+          "source_line": 1625
+        }
+      ],
+      "source_header": "bo3  2:0    nuke-dust2"
+    },
+    {
+      "map_id": "map_037",
+      "match_id": "match_020",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 14,
+        "team_b": 16
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 27,
+          "deaths": 16,
+          "assists": 1,
+          "source_line": 1653
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 22,
+          "assists": 6,
+          "source_line": 1657
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 15,
+          "deaths": 24,
+          "assists": 5,
+          "source_line": 1661
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 22,
+          "assists": 5,
+          "source_line": 1665
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 17,
+          "deaths": 23,
+          "assists": 7,
+          "source_line": 1681
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 26,
+          "deaths": 20,
+          "assists": 9,
+          "source_line": 1685
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 24,
+          "deaths": 21,
+          "assists": 7,
+          "source_line": 1689
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 21,
+          "deaths": 21,
+          "assists": 12,
+          "source_line": 1693
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 17,
+          "deaths": 19,
+          "assists": 2,
+          "source_line": 1697
+        }
+      ],
+      "source_header": "bo3 0:2   mirage-nuke"
+    },
+    {
+      "map_id": "map_038",
+      "match_id": "match_020",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 7,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 22,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 1713
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 5,
+          "deaths": 20,
+          "assists": 6,
+          "source_line": 1717
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 12,
+          "deaths": 20,
+          "assists": 7,
+          "source_line": 1721
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 8,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 1725
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 19,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 1741
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 1745
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 24,
+          "deaths": 11,
+          "assists": 4,
+          "source_line": 1749
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 7,
+          "source_line": 1753
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 7,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 1757
+        }
+      ],
+      "source_header": "bo3 0:2   mirage-nuke"
+    },
+    {
+      "map_id": "map_039",
+      "match_id": "match_021",
+      "map_index": 1,
+      "map": "inferno",
+      "score": {
+        "team_a": 13,
+        "team_b": 5
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 20,
+          "deaths": 6,
+          "assists": 4,
+          "source_line": 1785
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 15,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 1789
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 11,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 1793
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 18,
+          "deaths": 12,
+          "assists": 9,
+          "source_line": 1797
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 10,
+          "deaths": 8,
+          "assists": 6,
+          "source_line": 1801
+        },
+        {
+          "raw_name": "gamersanek",
+          "player_id": "gamiersanek",
+          "kills": 8,
+          "deaths": 16,
+          "assists": 1,
+          "source_line": 1813
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 1817
+        }
+      ],
+      "source_header": "bo3 2:0       inferno-anubis"
+    },
+    {
+      "map_id": "map_040",
+      "match_id": "match_021",
+      "map_index": 2,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 6
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 12,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 1833
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 22,
+          "deaths": 11,
+          "assists": 4,
+          "source_line": 1837
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 6,
+          "deaths": 8,
+          "assists": 2,
+          "source_line": 1841
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 12,
+          "deaths": 12,
+          "assists": 9,
+          "source_line": 1845
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 25,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 1849
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 1869
+        },
+        {
+          "raw_name": "gamersanek",
+          "player_id": "gamiersanek",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 1,
+          "source_line": 1873
+        }
+      ],
+      "source_header": "bo3 2:0       inferno-anubis"
+    },
+    {
+      "map_id": "map_041",
+      "match_id": "match_022",
+      "map_index": 1,
+      "map": "dust2",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 20,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 1901
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 16,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 1905
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 12,
+          "deaths": 18,
+          "assists": 4,
+          "source_line": 1909
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 21,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 1913
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 18,
+          "deaths": 19,
+          "assists": 3,
+          "source_line": 1917
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 1933
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 23,
+          "deaths": 16,
+          "assists": 7,
+          "source_line": 1937
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 14,
+          "deaths": 20,
+          "assists": 5,
+          "source_line": 1941
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 1945
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 11,
+          "deaths": 18,
+          "assists": 4,
+          "source_line": 1949
+        }
+      ],
+      "source_header": "bo3 2:0    dust2-anubis"
+    },
+    {
+      "map_id": "map_042",
+      "match_id": "match_022",
+      "map_index": 2,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 19,
+          "deaths": 12,
+          "assists": 11,
+          "source_line": 1973
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 10,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 1977
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 1981
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 18,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 1985
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 30,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 1989
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 23,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2005
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 17,
+          "deaths": 20,
+          "assists": 8,
+          "source_line": 2009
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 11,
+          "deaths": 19,
+          "assists": 2,
+          "source_line": 2013
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 16,
+          "assists": 3,
+          "source_line": 2017
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 15,
+          "deaths": 18,
+          "assists": 8,
+          "source_line": 2021
+        }
+      ],
+      "source_header": "bo3 2:0    dust2-anubis"
+    },
+    {
+      "map_id": "map_043",
+      "match_id": "match_023",
+      "map_index": 1,
+      "map": "nuke",
+      "score": {
+        "team_a": 9,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 18,
+          "deaths": 15,
+          "assists": 7,
+          "source_line": 2049
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 15,
+          "deaths": 18,
+          "assists": 9,
+          "source_line": 2053
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 20,
+          "assists": 7,
+          "source_line": 2057
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 14,
+          "deaths": 16,
+          "assists": 2,
+          "source_line": 2061
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 23,
+          "deaths": 17,
+          "assists": 6,
+          "source_line": 2065
+        },
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 21,
+          "deaths": 11,
+          "assists": 4,
+          "source_line": 2089
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 17,
+          "assists": 8,
+          "source_line": 2093
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 8,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 2097
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 16,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 2101
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 21,
+          "deaths": 14,
+          "assists": 1,
+          "source_line": 2105
+        }
+      ],
+      "source_header": "bo3 1:2    nuke-ancient-mirage"
+    },
+    {
+      "map_id": "map_044",
+      "match_id": "match_023",
+      "map_index": 2,
+      "map": "ancient",
+      "score": {
+        "team_a": 3,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 7,
+          "deaths": 13,
+          "assists": 4,
+          "source_line": 2121
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 9,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 2125
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2129
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 7,
+          "deaths": 15,
+          "assists": 1,
+          "source_line": 2133
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 3,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 2137
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 20,
+          "deaths": 6,
+          "assists": 3,
+          "source_line": 2153
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 11,
+          "assists": 2,
+          "source_line": 2157
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 9,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 2161
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 7,
+          "deaths": 6,
+          "assists": 6,
+          "source_line": 2165
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 6,
+          "deaths": 9,
+          "assists": 3,
+          "source_line": 2169
+        }
+      ],
+      "source_header": "bo3 1:2    nuke-ancient-mirage"
+    },
+    {
+      "map_id": "map_045",
+      "match_id": "match_023",
+      "map_index": 3,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 10
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 20,
+          "deaths": 10,
+          "assists": 2,
+          "source_line": 2185
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 20,
+          "deaths": 12,
+          "assists": 6,
+          "source_line": 2189
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 12,
+          "assists": 9,
+          "source_line": 2193
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 17,
+          "deaths": 18,
+          "assists": 5,
+          "source_line": 2197
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 12,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 2201
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 2217
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 11,
+          "deaths": 20,
+          "assists": 1,
+          "source_line": 2221
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 15,
+          "deaths": 18,
+          "assists": 2,
+          "source_line": 2225
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 17,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2229
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 8,
+          "deaths": 18,
+          "assists": 6,
+          "source_line": 2233
+        }
+      ],
+      "source_header": "bo3 1:2    nuke-ancient-mirage"
+    },
+    {
+      "map_id": "map_046",
+      "match_id": "match_024",
+      "map_index": 1,
+      "map": "cache",
+      "score": {
+        "team_a": 5,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 13,
+          "deaths": 11,
+          "assists": 4,
+          "source_line": 2265
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2269
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 4,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2273
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 11,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2277
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 2297
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 14,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2301
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 24,
+          "deaths": 9,
+          "assists": 4,
+          "source_line": 2305
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 11,
+          "deaths": 13,
+          "assists": 7,
+          "source_line": 2309
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 10,
+          "deaths": 13,
+          "assists": 5,
+          "source_line": 2313
+        }
+      ],
+      "source_header": "bo3 2:1   cache-overpass-anubis"
+    },
+    {
+      "map_id": "map_047",
+      "match_id": "match_024",
+      "map_index": 2,
+      "map": "overpass",
+      "score": {
+        "team_a": 13,
+        "team_b": 2
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 11,
+          "deaths": 8,
+          "assists": 2,
+          "source_line": 2333
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 10,
+          "deaths": 7,
+          "assists": 4,
+          "source_line": 2337
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 15,
+          "deaths": 7,
+          "assists": 5,
+          "source_line": 2341
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 4,
+          "assists": 2,
+          "source_line": 2349
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 5,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 2365
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 11,
+          "deaths": 12,
+          "assists": 2,
+          "source_line": 2369
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 7,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2373
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 1,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 2377
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 10,
+          "deaths": 13,
+          "assists": 0,
+          "source_line": 2381
+        }
+      ],
+      "source_header": "bo3 2:1   cache-overpass-anubis"
+    },
+    {
+      "map_id": "map_048",
+      "match_id": "match_024",
+      "map_index": 3,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 10
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 12,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 2397
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 2401
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 21,
+          "deaths": 11,
+          "assists": 1,
+          "source_line": 2405
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 19,
+          "deaths": 18,
+          "assists": 6,
+          "source_line": 2409
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 14,
+          "deaths": 17,
+          "assists": 3,
+          "source_line": 2429
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 18,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 2433
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 4,
+          "source_line": 2437
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 19,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 2441
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 7,
+          "deaths": 20,
+          "assists": 9,
+          "source_line": 2445
+        }
+      ],
+      "source_header": "bo3 2:1   cache-overpass-anubis"
+    },
+    {
+      "map_id": "map_049",
+      "match_id": "match_025",
+      "map_index": 1,
+      "map": "dust2",
+      "score": {
+        "team_a": 13,
+        "team_b": 3
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 6,
+          "source_line": 2477
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 15,
+          "deaths": 6,
+          "assists": 2,
+          "source_line": 2481
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 17,
+          "deaths": 8,
+          "assists": 8,
+          "source_line": 2485
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 15,
+          "deaths": 6,
+          "assists": 5,
+          "source_line": 2489
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 4,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2509
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2513
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 8,
+          "deaths": 13,
+          "assists": 5,
+          "source_line": 2517
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 7,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 2521
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 5,
+          "deaths": 15,
+          "assists": 3,
+          "source_line": 2525
+        }
+      ],
+      "source_header": "bo3 2:0  dust2-nuke"
+    },
+    {
+      "map_id": "map_050",
+      "match_id": "match_025",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 18,
+          "deaths": 13,
+          "assists": 7,
+          "source_line": 2545
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 28,
+          "deaths": 15,
+          "assists": 6,
+          "source_line": 2549
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 22,
+          "deaths": 16,
+          "assists": 4,
+          "source_line": 2557
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 11,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 2561
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 3,
+          "source_line": 2577
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 7,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 2581
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 2585
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 13,
+          "deaths": 20,
+          "assists": 5,
+          "source_line": 2589
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 18,
+          "deaths": 22,
+          "assists": 3,
+          "source_line": 2593
+        }
+      ],
+      "source_header": "bo3 2:0  dust2-nuke"
+    },
+    {
+      "map_id": "map_051",
+      "match_id": "match_026",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 9,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 16,
+          "assists": 6,
+          "source_line": 2625
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 8,
+          "deaths": 17,
+          "assists": 5,
+          "source_line": 2629
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 21,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 2633
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 2637
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 15,
+          "deaths": 18,
+          "assists": 4,
+          "source_line": 2641
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 20,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 2657
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 16,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 2661
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 14,
+          "deaths": 17,
+          "assists": 2,
+          "source_line": 2665
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 14,
+          "deaths": 13,
+          "assists": 2,
+          "source_line": 2669
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 18,
+          "deaths": 13,
+          "assists": 7,
+          "source_line": 2673
+        }
+      ],
+      "source_header": "bo3  0:2    mirage-inferno"
+    },
+    {
+      "map_id": "map_052",
+      "match_id": "match_026",
+      "map_index": 2,
+      "map": "inferno",
+      "score": {
+        "team_a": 8,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 10,
+          "deaths": 16,
+          "assists": 7,
+          "source_line": 2689
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2693
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 21,
+          "deaths": 15,
+          "assists": 5,
+          "source_line": 2697
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 2,
+          "source_line": 2701
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 1,
+          "source_line": 2705
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 25,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 2721
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 2725
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 20,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 2729
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 17,
+          "deaths": 12,
+          "assists": 4,
+          "source_line": 2733
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 11,
+          "deaths": 13,
+          "assists": 8,
+          "source_line": 2737
+        }
+      ],
+      "source_header": "bo3  0:2    mirage-inferno"
+    },
+    {
+      "map_id": "map_053",
+      "match_id": "match_027",
+      "map_index": 1,
+      "map": "dust2",
+      "score": {
+        "team_a": 13,
+        "team_b": 2
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 15,
+          "deaths": 5,
+          "assists": 4,
+          "source_line": 2765
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 8,
+          "deaths": 11,
+          "assists": 7,
+          "source_line": 2769
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 11,
+          "assists": 2,
+          "source_line": 2773
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 8,
+          "deaths": 7,
+          "assists": 3,
+          "source_line": 2777
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 23,
+          "deaths": 7,
+          "assists": 4,
+          "source_line": 2781
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 15,
+          "deaths": 12,
+          "assists": 2,
+          "source_line": 2797
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 3,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 2801
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2805
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 6,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2809
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 8,
+          "deaths": 11,
+          "assists": 1,
+          "source_line": 2813
+        }
+      ],
+      "source_header": "bo3 2:1   dust2-nuke-anubis"
+    },
+    {
+      "map_id": "map_054",
+      "match_id": "match_027",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 6,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 17,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2829
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 11,
+          "deaths": 17,
+          "assists": 1,
+          "source_line": 2833
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 14,
+          "deaths": 13,
+          "assists": 0,
+          "source_line": 2837
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 6,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2841
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 14,
+          "assists": 2,
+          "source_line": 2845
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 11,
+          "deaths": 12,
+          "assists": 2,
+          "source_line": 2861
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 15,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2865
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 10,
+          "deaths": 12,
+          "assists": 3,
+          "source_line": 2869
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 17,
+          "deaths": 11,
+          "assists": 3,
+          "source_line": 2873
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 17,
+          "deaths": 11,
+          "assists": 5,
+          "source_line": 2877
+        }
+      ],
+      "source_header": "bo3 2:1   dust2-nuke-anubis"
+    },
+    {
+      "map_id": "map_055",
+      "match_id": "match_027",
+      "map_index": 3,
+      "map": "anubis",
+      "score": {
+        "team_a": 13,
+        "team_b": 9
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 19,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 2893
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 18,
+          "deaths": 15,
+          "assists": 2,
+          "source_line": 2897
+        },
+        {
+          "raw_name": "vorynixy",
+          "player_id": "vorenxy",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 2901
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 19,
+          "deaths": 13,
+          "assists": 9,
+          "source_line": 2905
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 21,
+          "deaths": 12,
+          "assists": 5,
+          "source_line": 2909
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 2925
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 7,
+          "deaths": 16,
+          "assists": 4,
+          "source_line": 2929
+        },
+        {
+          "raw_name": "glinomessi",
+          "player_id": "пяточки",
+          "kills": 6,
+          "deaths": 19,
+          "assists": 4,
+          "source_line": 2933
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 2937
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 21,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 2941
+        }
+      ],
+      "source_header": "bo3 2:1   dust2-nuke-anubis"
+    },
+    {
+      "map_id": "map_056",
+      "match_id": "match_028",
+      "map_index": 1,
+      "map": "cache",
+      "score": {
+        "team_a": 19,
+        "team_b": 16
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 29,
+          "deaths": 23,
+          "assists": 7,
+          "source_line": 2973
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 14,
+          "deaths": 26,
+          "assists": 9,
+          "source_line": 2977
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 49,
+          "deaths": 21,
+          "assists": 8,
+          "source_line": 2981
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 17,
+          "deaths": 24,
+          "assists": 5,
+          "source_line": 2985
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 18,
+          "deaths": 25,
+          "assists": 6,
+          "source_line": 2989
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 18,
+          "deaths": 28,
+          "assists": 9,
+          "source_line": 3005
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 30,
+          "deaths": 24,
+          "assists": 3,
+          "source_line": 3009
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 25,
+          "deaths": 25,
+          "assists": 10,
+          "source_line": 3013
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 26,
+          "deaths": 25,
+          "assists": 7,
+          "source_line": 3017
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 17,
+          "deaths": 26,
+          "assists": 9,
+          "source_line": 3021
+        }
+      ],
+      "source_header": "bo3 2:0  cache-nuke"
+    },
+    {
+      "map_id": "map_057",
+      "match_id": "match_028",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 13,
+        "team_b": 2
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 7,
+          "assists": 4,
+          "source_line": 3041
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 17,
+          "deaths": 14,
+          "assists": 8,
+          "source_line": 3045
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 11,
+          "assists": 2,
+          "source_line": 3049
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 8,
+          "deaths": 12,
+          "assists": 4,
+          "source_line": 3053
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 3,
+          "source_line": 3057
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 17,
+          "deaths": 13,
+          "assists": 1,
+          "source_line": 3073
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 13,
+          "deaths": 13,
+          "assists": 4,
+          "source_line": 3077
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 5,
+          "source_line": 3081
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 4,
+          "deaths": 14,
+          "assists": 3,
+          "source_line": 3085
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 10,
+          "deaths": 14,
+          "assists": 4,
+          "source_line": 3089
+        }
+      ],
+      "source_header": "bo3 2:0  cache-nuke"
+    },
+    {
+      "map_id": "map_058",
+      "match_id": "match_029",
+      "map_index": 1,
+      "map": "nuke",
+      "score": {
+        "team_a": 17,
+        "team_b": 19
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 32,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 3121
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 15,
+          "deaths": 29,
+          "assists": 7,
+          "source_line": 3125
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 20,
+          "deaths": 24,
+          "assists": 11,
+          "source_line": 3129
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 32,
+          "deaths": 27,
+          "assists": 6,
+          "source_line": 3133
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 19,
+          "deaths": 28,
+          "assists": 5,
+          "source_line": 3137
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 22,
+          "deaths": 25,
+          "assists": 6,
+          "source_line": 3153
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 29,
+          "deaths": 22,
+          "assists": 5,
+          "source_line": 3157
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 24,
+          "deaths": 23,
+          "assists": 3,
+          "source_line": 3161
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 32,
+          "deaths": 22,
+          "assists": 4,
+          "source_line": 3165
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 19,
+          "deaths": 27,
+          "assists": 14,
+          "source_line": 3169
+        }
+      ],
+      "source_header": "bo3  1:1    nuke-anubis"
+    },
+    {
+      "map_id": "map_059",
+      "match_id": "match_029",
+      "map_index": 2,
+      "map": "anubis",
+      "score": {
+        "team_a": 16,
+        "team_b": 13
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 25,
+          "deaths": 19,
+          "assists": 5,
+          "source_line": 3185
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 12,
+          "deaths": 21,
+          "assists": 4,
+          "source_line": 3189
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 26,
+          "deaths": 23,
+          "assists": 12,
+          "source_line": 3193
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 22,
+          "deaths": 19,
+          "assists": 9,
+          "source_line": 3197
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 20,
+          "deaths": 22,
+          "assists": 8,
+          "source_line": 3201
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 25,
+          "deaths": 19,
+          "assists": 3,
+          "source_line": 3217
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 20,
+          "deaths": 22,
+          "assists": 7,
+          "source_line": 3221
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 20,
+          "deaths": 21,
+          "assists": 6,
+          "source_line": 3225
+        },
+        {
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa",
+          "kills": 18,
+          "deaths": 19,
+          "assists": 6,
+          "source_line": 3229
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 15,
+          "deaths": 21,
+          "assists": 8,
+          "source_line": 3233
+        }
+      ],
+      "source_header": "bo3  1:1    nuke-anubis"
+    },
+    {
+      "map_id": "map_060",
+      "match_id": "match_030",
+      "map_index": 1,
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 9
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 16,
+          "deaths": 13,
+          "assists": 3,
+          "source_line": 3261
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 17,
+          "deaths": 17,
+          "assists": 4,
+          "source_line": 3265
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 2,
+          "source_line": 3269
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 16,
+          "deaths": 14,
+          "assists": 4,
+          "source_line": 3273
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 16,
+          "deaths": 13,
+          "assists": 5,
+          "source_line": 3277
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 10,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 3291
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 13,
+          "deaths": 16,
+          "assists": 5,
+          "source_line": 3295
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 19,
+          "deaths": 14,
+          "assists": 4,
+          "source_line": 3299
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 13,
+          "deaths": 21,
+          "assists": 5,
+          "source_line": 3303
+        }
+      ],
+      "source_header": "bo3   2:0    mirage-nuke"
+    },
+    {
+      "map_id": "map_061",
+      "match_id": "match_030",
+      "map_index": 2,
+      "map": "nuke",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "stats_available": true,
+      "player_stats": [
+        {
+          "raw_name": "gletcher",
+          "player_id": "gletcher",
+          "kills": 18,
+          "deaths": 14,
+          "assists": 6,
+          "source_line": 3317
+        },
+        {
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus",
+          "kills": 17,
+          "deaths": 16,
+          "assists": 0,
+          "source_line": 3321
+        },
+        {
+          "raw_name": "꧁ĐÖŅÄȚËŖ꧂",
+          "player_id": "donater",
+          "kills": 23,
+          "deaths": 14,
+          "assists": 7,
+          "source_line": 3325
+        },
+        {
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek",
+          "kills": 17,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 3329
+        },
+        {
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 4,
+          "source_line": 3333
+        },
+        {
+          "raw_name": "эго1st",
+          "player_id": "эгоист",
+          "kills": 9,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 3349
+        },
+        {
+          "raw_name": "дядя",
+          "player_id": "дядя",
+          "kills": 21,
+          "deaths": 18,
+          "assists": 3,
+          "source_line": 3353
+        },
+        {
+          "raw_name": "cristina ronoldu",
+          "player_id": "пяточки",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 7,
+          "source_line": 3357
+        },
+        {
+          "raw_name": "подушка пердужка",
+          "player_id": "подушка пердушка",
+          "kills": 14,
+          "deaths": 19,
+          "assists": 2,
+          "source_line": 3361
+        }
+      ],
+      "source_header": "bo3   2:0    mirage-nuke"
+    },
+    {
+      "map_id": "map_062",
+      "match_id": "match_062",
+      "map_index": 1,
+      "map": "nuke",
+      "score": null,
+      "stats_available": false,
+      "player_stats": null,
+      "source_header": "bo3 2:0 1-win nuke-mirage",
+      "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    },
+    {
+      "map_id": "map_063",
+      "match_id": "match_062",
+      "map_index": 2,
+      "map": "mirage",
+      "score": null,
+      "stats_available": false,
+      "player_stats": null,
+      "source_header": "bo3 2:0 1-win nuke-mirage",
+      "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    },
+    {
+      "map_id": "map_064",
+      "match_id": "match_063",
+      "map_index": 1,
+      "map": "nuke",
+      "score": null,
+      "stats_available": false,
+      "player_stats": null,
+      "source_header": "bo3 2:1 2-win nuke-dust2-mirage",
+      "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    },
+    {
+      "map_id": "map_065",
+      "match_id": "match_063",
+      "map_index": 2,
+      "map": "dust2",
+      "score": null,
+      "stats_available": false,
+      "player_stats": null,
+      "source_header": "bo3 2:1 2-win nuke-dust2-mirage",
+      "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    },
+    {
+      "map_id": "map_066",
+      "match_id": "match_063",
+      "map_index": 3,
+      "map": "mirage",
+      "score": null,
+      "stats_available": false,
+      "player_stats": null,
+      "source_header": "bo3 2:1 2-win nuke-dust2-mirage",
+      "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    }
+  ],
+  "matches": [
+    {
+      "match_id": "match_001",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3   0:2 mirage-dust2",
+      "map_ids": [
+        "map_001",
+        "map_002"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_002",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0    mirage-inferno",
+      "map_ids": [
+        "map_003",
+        "map_004"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_003",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:1    mirage-anubis",
+      "map_ids": [
+        "map_005",
+        "map_006"
+      ],
+      "series_score": "1:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_004",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1     train",
+      "map_ids": [
+        "map_007"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_005",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2    dus2-mirage",
+      "map_ids": [
+        "map_008",
+        "map_009"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_006",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1   ancient",
+      "map_ids": [
+        "map_010"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_007",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   mirage-mirage-dust2",
+      "map_ids": [
+        "map_011",
+        "map_012",
+        "map_013"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_008",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   dust2-inferno-mirage",
+      "map_ids": [
+        "map_014",
+        "map_015",
+        "map_016"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_009",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0 Anubis-dust2",
+      "map_ids": [
+        "map_017",
+        "map_018"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_010",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 mirage",
+      "map_ids": [
+        "map_019"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_011",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0   Anubis-dust2",
+      "map_ids": [
+        "map_020",
+        "map_021"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_012",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   vertigo-overpass-nuke",
+      "map_ids": [
+        "map_022",
+        "map_023",
+        "map_024"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_013",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2  mirage-dust-Anubis",
+      "map_ids": [
+        "map_025",
+        "map_026",
+        "map_027"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_014",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 0:1  inferno",
+      "map_ids": [
+        "map_028"
+      ],
+      "series_score": "0:1",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_015",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 0:1 mirage",
+      "map_ids": [
+        "map_029"
+      ],
+      "series_score": "0:1",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_016",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2   anubis-mirage",
+      "map_ids": [
+        "map_030",
+        "map_031"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_017",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1    1:0   mirage",
+      "map_ids": [
+        "map_032"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_018",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3      2:0    mirage - nuke",
+      "map_ids": [
+        "map_033",
+        "map_034"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_019",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  2:0    nuke-dust2",
+      "map_ids": [
+        "map_035",
+        "map_036"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_020",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2   mirage-nuke",
+      "map_ids": [
+        "map_037",
+        "map_038"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_021",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0       inferno-anubis",
+      "map_ids": [
+        "map_039",
+        "map_040"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_022",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0    dust2-anubis",
+      "map_ids": [
+        "map_041",
+        "map_042"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_023",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2    nuke-ancient-mirage",
+      "map_ids": [
+        "map_043",
+        "map_044",
+        "map_045"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_024",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:1   cache-overpass-anubis",
+      "map_ids": [
+        "map_046",
+        "map_047",
+        "map_048"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_025",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0  dust2-nuke",
+      "map_ids": [
+        "map_049",
+        "map_050"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_026",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  0:2    mirage-inferno",
+      "map_ids": [
+        "map_051",
+        "map_052"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_027",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:1   dust2-nuke-anubis",
+      "map_ids": [
+        "map_053",
+        "map_054",
+        "map_055"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_028",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0  cache-nuke",
+      "map_ids": [
+        "map_056",
+        "map_057"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_029",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  1:1    nuke-anubis",
+      "map_ids": [
+        "map_058",
+        "map_059"
+      ],
+      "series_score": "1:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_030",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3   2:0    mirage-nuke",
+      "map_ids": [
+        "map_060",
+        "map_061"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_062",
+      "source_kind": "compact_bo3",
+      "format": "BO3",
+      "header": "bo3 2:0 1-win nuke-mirage",
+      "map_ids": [
+        "map_062",
+        "map_063"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": true,
+      "series_aggregate_stats": [
+        {
+          "player_id": "gletcher",
+          "raw_name": "glechter",
+          "kills": 33,
+          "deaths": 22,
+          "assists": 7
+        },
+        {
+          "player_id": "эгоист",
+          "raw_name": "эгo1st",
+          "kills": 38,
+          "deaths": 32,
+          "assists": 11
+        },
+        {
+          "player_id": "donater",
+          "raw_name": "donater",
+          "kills": 36,
+          "deaths": 32,
+          "assists": 13
+        },
+        {
+          "player_id": "дядя",
+          "raw_name": "дядя",
+          "kills": 29,
+          "deaths": 26,
+          "assists": 7
+        },
+        {
+          "player_id": "bigchungus",
+          "raw_name": "bυchungus",
+          "kills": 30,
+          "deaths": 27,
+          "assists": 9
+        },
+        {
+          "player_id": null,
+          "raw_name": "flaffix",
+          "kills": 26,
+          "deaths": 26,
+          "assists": 7
+        },
+        {
+          "player_id": "gamiersanek",
+          "raw_name": "gamersanek",
+          "kills": 25,
+          "deaths": 26,
+          "assists": 11
+        },
+        {
+          "player_id": "подушка пердушка",
+          "raw_name": "подушка пердушка",
+          "kills": 22,
+          "deaths": 29,
+          "assists": 8
+        },
+        {
+          "player_id": null,
+          "raw_name": "водка",
+          "kills": 21,
+          "deaths": 28,
+          "assists": 11
+        },
+        {
+          "player_id": "Patr1k",
+          "raw_name": "patr1k",
+          "kills": 18,
+          "deaths": 31,
+          "assists": 7
+        }
+      ],
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_063",
+      "source_kind": "compact_bo3",
+      "format": "BO3",
+      "header": "bo3 2:1 2-win nuke-dust2-mirage",
+      "map_ids": [
+        "map_064",
+        "map_065",
+        "map_066"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": true,
+      "series_aggregate_stats": [
+        {
+          "player_id": "gletcher",
+          "raw_name": "gletcher",
+          "kills": 53,
+          "deaths": 33,
+          "assists": 12
+        },
+        {
+          "player_id": null,
+          "raw_name": "Водка",
+          "kills": 63,
+          "deaths": 45,
+          "assists": 10
+        },
+        {
+          "player_id": null,
+          "raw_name": "FLAFF1X",
+          "kills": 50,
+          "deaths": 38,
+          "assists": 17
+        },
+        {
+          "player_id": "Patr1k",
+          "raw_name": "Patr1k",
+          "kills": 47,
+          "deaths": 39,
+          "assists": 11
+        },
+        {
+          "player_id": "эгоист",
+          "raw_name": "эгоист",
+          "kills": 44,
+          "deaths": 41,
+          "assists": 17
+        },
+        {
+          "player_id": "donater",
+          "raw_name": "DONATER",
+          "kills": 44,
+          "deaths": 43,
+          "assists": 17
+        },
+        {
+          "player_id": "дядя",
+          "raw_name": "дядя",
+          "kills": 44,
+          "deaths": 43,
+          "assists": 13
+        },
+        {
+          "player_id": "подушка пердушка",
+          "raw_name": "подушка пер...",
+          "kills": 41,
+          "deaths": 42,
+          "assists": 7
+        },
+        {
+          "player_id": "пяточки",
+          "raw_name": "питочки",
+          "kills": 37,
+          "deaths": 43,
+          "assists": 20
+        },
+        {
+          "player_id": "bigchungus",
+          "raw_name": "bigchungus",
+          "kills": 29,
+          "deaths": 48,
+          "assists": 17
+        }
+      ],
+      "series_score_source": "explicit_header"
+    }
+  ],
+  "aliases": {
+    "m0nesy pro 2004": "gletcher",
+    "glechter": "gletcher",
+    "gletcher": "gletcher",
+    "DaDa_VoVa": "DaDa_VoVa",
+    "donk666 pro 2004": "donater",
+    "daynchel": "donater",
+    "꧁ĐÖŅÄȚËŖ꧂": "donater",
+    "DONATER": "donater",
+    "donater": "donater",
+    "ebatel v popo4ky": "подушка пердушка",
+    "подушка пердужка": "подушка пердушка",
+    "подушка пердушка": "подушка пердушка",
+    "подушка пер...": "подушка пердушка",
+    "zverichavchika18": "vorenxy",
+    "vorynixy": "vorenxy",
+    "XANTARESSSSSS": "Patr1k",
+    "XANTARESSSSSSw": "Patr1k",
+    "Patr1k": "Patr1k",
+    "patr1k": "Patr1k",
+    "ZverTualeta": "bigchungus",
+    "bigchungus": "bigchungus",
+    "bυchungus": "bigchungus",
+    "Zywoo pro 2004": "эгоист",
+    "эго1st": "эгоист",
+    "эгo1st": "эгоист",
+    "эгоист": "эгоист",
+    "s1mple pro 2004": "пяточки",
+    "cristina ronoldu": "пяточки",
+    "glinomessi": "пяточки",
+    "питочки": "пяточки",
+    "gamiersanek": "gamiersanek",
+    "gamersanek": "gamiersanek",
+    "дядя": "дядя"
+  },
+  "audit": []
+}

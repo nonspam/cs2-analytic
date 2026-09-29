@@ -1,0 +1,258 @@
+{
+  "version": "v3",
+  "players": [
+    {
+      "player_id": "gletcher",
+      "display_name": "gletcher",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "m0nesy pro 2004",
+        "glechter",
+        "gletcher"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 1253,
+        "d": 866,
+        "a": 329
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "DaDa_VoVa",
+      "display_name": "DaDa_VoVa",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "DaDa_VoVa"
+      ],
+      "frozen_source_totals": {
+        "maps": 24,
+        "k": 428,
+        "d": 350,
+        "a": 110
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "donater",
+      "display_name": "donater",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "donk666 pro 2004",
+        "daynchel",
+        "꧁ĐÖŅÄȚËŖ꧂",
+        "DONATER",
+        "donater"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 1143,
+        "d": 1036,
+        "a": 420
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "подушка пердушка",
+      "display_name": "подушка пердушка",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "ebatel v popo4ky",
+        "подушка пердужка",
+        "подушка пердушка",
+        "подушка пер..."
+      ],
+      "frozen_source_totals": {
+        "maps": 50,
+        "k": 771,
+        "d": 735,
+        "a": 179
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "vorenxy",
+      "display_name": "vorenxy",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "zverichavchika18",
+        "vorynixy"
+      ],
+      "frozen_source_totals": {
+        "maps": 47,
+        "k": 747,
+        "d": 711,
+        "a": 240
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "Patr1k",
+      "display_name": "Patr1k",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "XANTARESSSSSS",
+        "XANTARESSSSSSw",
+        "Patr1k",
+        "patr1k"
+      ],
+      "frozen_source_totals": {
+        "maps": 66,
+        "k": 946,
+        "d": 1025,
+        "a": 287
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "bigchungus",
+      "display_name": "bigchungus",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "ZverTualeta",
+        "bigchungus",
+        "bυchungus"
+      ],
+      "frozen_source_totals": {
+        "maps": 32,
+        "k": 470,
+        "d": 533,
+        "a": 158
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "gamiersanek",
+      "display_name": "gamiersanek",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "gamiersanek",
+        "gamersanek"
+      ],
+      "frozen_source_totals": {
+        "maps": 27,
+        "k": 358,
+        "d": 407,
+        "a": 119
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "эгоист",
+      "display_name": "эгоист",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "Zywoo pro 2004",
+        "эго1st",
+        "эгo1st",
+        "эгоист"
+      ],
+      "frozen_source_totals": {
+        "maps": 63,
+        "k": 904,
+        "d": 1045,
+        "a": 313
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "пяточки",
+      "display_name": "пяточки",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "s1mple pro 2004",
+        "cristina ronoldu",
+        "glinomessi",
+        "питочки"
+      ],
+      "frozen_source_totals": {
+        "maps": 59,
+        "k": 812,
+        "d": 966,
+        "a": 272
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    },
+    {
+      "player_id": "дядя",
+      "display_name": "дядя",
+      "status": "active",
+      "created_at": null,
+      "archived_at": null,
+      "aliases": [
+        "дядя"
+      ],
+      "frozen_source_totals": {
+        "maps": 28,
+        "k": 378,
+        "d": 451,
+        "a": 116
+      },
+      "notes": null,
+      "is_active": true,
+      "deletion_policy": "archive_if_historical",
+      "history_locked": true,
+      "updated_at": null
+    }
+  ]
+}

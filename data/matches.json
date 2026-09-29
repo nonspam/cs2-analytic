@@ -1,0 +1,567 @@
+{
+  "version": "v3",
+  "matches": [
+    {
+      "match_id": "match_001",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3   0:2 mirage-dust2",
+      "map_ids": [
+        "map_001",
+        "map_002"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_002",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0    mirage-inferno",
+      "map_ids": [
+        "map_003",
+        "map_004"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_003",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:1    mirage-anubis",
+      "map_ids": [
+        "map_005",
+        "map_006"
+      ],
+      "series_score": "1:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_004",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1     train",
+      "map_ids": [
+        "map_007"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_005",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2    dus2-mirage",
+      "map_ids": [
+        "map_008",
+        "map_009"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_006",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1   ancient",
+      "map_ids": [
+        "map_010"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_007",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   mirage-mirage-dust2",
+      "map_ids": [
+        "map_011",
+        "map_012",
+        "map_013"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_008",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   dust2-inferno-mirage",
+      "map_ids": [
+        "map_014",
+        "map_015",
+        "map_016"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_009",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0 Anubis-dust2",
+      "map_ids": [
+        "map_017",
+        "map_018"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_010",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 mirage",
+      "map_ids": [
+        "map_019"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_011",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0   Anubis-dust2",
+      "map_ids": [
+        "map_020",
+        "map_021"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_012",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2   vertigo-overpass-nuke",
+      "map_ids": [
+        "map_022",
+        "map_023",
+        "map_024"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_013",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2  mirage-dust-Anubis",
+      "map_ids": [
+        "map_025",
+        "map_026",
+        "map_027"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_014",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 0:1  inferno",
+      "map_ids": [
+        "map_028"
+      ],
+      "series_score": "0:1",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_015",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1 0:1 mirage",
+      "map_ids": [
+        "map_029"
+      ],
+      "series_score": "0:1",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_016",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2   anubis-mirage",
+      "map_ids": [
+        "map_030",
+        "map_031"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_017",
+      "source_kind": "detailed",
+      "format": "BO1",
+      "header": "bo1    1:0   mirage",
+      "map_ids": [
+        "map_032"
+      ],
+      "series_score": "1:0",
+      "series_stats_available": false,
+      "series_score_source": "derived_from_map_score"
+    },
+    {
+      "match_id": "match_018",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3      2:0    mirage - nuke",
+      "map_ids": [
+        "map_033",
+        "map_034"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_019",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  2:0    nuke-dust2",
+      "map_ids": [
+        "map_035",
+        "map_036"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_020",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 0:2   mirage-nuke",
+      "map_ids": [
+        "map_037",
+        "map_038"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_021",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0       inferno-anubis",
+      "map_ids": [
+        "map_039",
+        "map_040"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_022",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0    dust2-anubis",
+      "map_ids": [
+        "map_041",
+        "map_042"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_023",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 1:2    nuke-ancient-mirage",
+      "map_ids": [
+        "map_043",
+        "map_044",
+        "map_045"
+      ],
+      "series_score": "1:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_024",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:1   cache-overpass-anubis",
+      "map_ids": [
+        "map_046",
+        "map_047",
+        "map_048"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_025",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0  dust2-nuke",
+      "map_ids": [
+        "map_049",
+        "map_050"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_026",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  0:2    mirage-inferno",
+      "map_ids": [
+        "map_051",
+        "map_052"
+      ],
+      "series_score": "0:2",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_027",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:1   dust2-nuke-anubis",
+      "map_ids": [
+        "map_053",
+        "map_054",
+        "map_055"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_028",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3 2:0  cache-nuke",
+      "map_ids": [
+        "map_056",
+        "map_057"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_029",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3  1:1    nuke-anubis",
+      "map_ids": [
+        "map_058",
+        "map_059"
+      ],
+      "series_score": "1:1",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_030",
+      "source_kind": "detailed",
+      "format": "BO3",
+      "header": "bo3   2:0    mirage-nuke",
+      "map_ids": [
+        "map_060",
+        "map_061"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": false,
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_062",
+      "source_kind": "compact_bo3",
+      "format": "BO3",
+      "header": "bo3 2:0 1-win nuke-mirage",
+      "map_ids": [
+        "map_062",
+        "map_063"
+      ],
+      "series_score": "2:0",
+      "series_stats_available": true,
+      "series_aggregate_stats": [
+        {
+          "player_id": "gletcher",
+          "raw_name": "glechter",
+          "kills": 33,
+          "deaths": 22,
+          "assists": 7
+        },
+        {
+          "player_id": "эгоист",
+          "raw_name": "эгo1st",
+          "kills": 38,
+          "deaths": 32,
+          "assists": 11
+        },
+        {
+          "player_id": "donater",
+          "raw_name": "donater",
+          "kills": 36,
+          "deaths": 32,
+          "assists": 13
+        },
+        {
+          "player_id": "дядя",
+          "raw_name": "дядя",
+          "kills": 29,
+          "deaths": 26,
+          "assists": 7
+        },
+        {
+          "player_id": "bigchungus",
+          "raw_name": "bυchungus",
+          "kills": 30,
+          "deaths": 27,
+          "assists": 9
+        },
+        {
+          "player_id": null,
+          "raw_name": "flaffix",
+          "kills": 26,
+          "deaths": 26,
+          "assists": 7
+        },
+        {
+          "player_id": "gamiersanek",
+          "raw_name": "gamersanek",
+          "kills": 25,
+          "deaths": 26,
+          "assists": 11
+        },
+        {
+          "player_id": "подушка пердушка",
+          "raw_name": "подушка пердушка",
+          "kills": 22,
+          "deaths": 29,
+          "assists": 8
+        },
+        {
+          "player_id": null,
+          "raw_name": "водка",
+          "kills": 21,
+          "deaths": 28,
+          "assists": 11
+        },
+        {
+          "player_id": "Patr1k",
+          "raw_name": "patr1k",
+          "kills": 18,
+          "deaths": 31,
+          "assists": 7
+        }
+      ],
+      "series_score_source": "explicit_header"
+    },
+    {
+      "match_id": "match_063",
+      "source_kind": "compact_bo3",
+      "format": "BO3",
+      "header": "bo3 2:1 2-win nuke-dust2-mirage",
+      "map_ids": [
+        "map_064",
+        "map_065",
+        "map_066"
+      ],
+      "series_score": "2:1",
+      "series_stats_available": true,
+      "series_aggregate_stats": [
+        {
+          "player_id": "gletcher",
+          "raw_name": "gletcher",
+          "kills": 53,
+          "deaths": 33,
+          "assists": 12
+        },
+        {
+          "player_id": null,
+          "raw_name": "Водка",
+          "kills": 63,
+          "deaths": 45,
+          "assists": 10
+        },
+        {
+          "player_id": null,
+          "raw_name": "FLAFF1X",
+          "kills": 50,
+          "deaths": 38,
+          "assists": 17
+        },
+        {
+          "player_id": "Patr1k",
+          "raw_name": "Patr1k",
+          "kills": 47,
+          "deaths": 39,
+          "assists": 11
+        },
+        {
+          "player_id": "эгоист",
+          "raw_name": "эгоист",
+          "kills": 44,
+          "deaths": 41,
+          "assists": 17
+        },
+        {
+          "player_id": "donater",
+          "raw_name": "DONATER",
+          "kills": 44,
+          "deaths": 43,
+          "assists": 17
+        },
+        {
+          "player_id": "дядя",
+          "raw_name": "дядя",
+          "kills": 44,
+          "deaths": 43,
+          "assists": 13
+        },
+        {
+          "player_id": "подушка пердушка",
+          "raw_name": "подушка пер...",
+          "kills": 41,
+          "deaths": 42,
+          "assists": 7
+        },
+        {
+          "player_id": "пяточки",
+          "raw_name": "питочки",
+          "kills": 37,
+          "deaths": 43,
+          "assists": 20
+        },
+        {
+          "player_id": "bigchungus",
+          "raw_name": "bigchungus",
+          "kills": 29,
+          "deaths": 48,
+          "assists": 17
+        }
+      ],
+      "series_score_source": "explicit_header"
+    }
+  ]
+}

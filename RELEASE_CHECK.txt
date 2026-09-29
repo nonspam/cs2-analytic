@@ -1,0 +1,14 @@
+CS5 ANALYTICS v39 — RELEASE CHECK
+
+1) Windows: START_SERVER.bat
+2) PowerShell: START_SERVER.ps1
+3) Or: python -m http.server 8000
+4) Open: http://localhost:8000/
+5) index.html can also be opened directly; data_embedded.js provides a fallback when fetch(data/*.json) is unavailable.
+
+QA:
+- python QA_CHECK.py
+- node MECHANISM_QA_v39.js
+- node E2E_QA_v39.js
+- node E2E_QA_v39_strict.js
+6) UI runtime smoke: node UI_RUNTIME_QA_v40.js

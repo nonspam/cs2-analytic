@@ -1,0 +1,17 @@
+{
+  "database": "CS5-АНАЛИТИКА",
+  "version": "v3",
+  "status": "audited+analytical-timeseries+ui-runtime-qa",
+  "source_file": "all 5x5(1).txt",
+  "source_sha256": "107c112ca417e118ebf3b13e197939eaa89dc61914ab9f13c8e2b7a00b06c377",
+  "counts": {
+    "maps": 66,
+    "detailed_maps": 61,
+    "compact_maps": 5,
+    "matches": 32,
+    "map_types": 10
+  },
+  "audit_file": "RELEASE_REPORT.md",
+  "application_spec": "IMPLEMENTATION_STATUS_v40.md",
+  "site_version": "v40-shared-sync"
+}
