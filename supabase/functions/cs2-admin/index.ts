@@ -1,5 +1,6 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
-import { validateBase } from "../../../validation.js";
+import "../../../validation.js";
+const validateBase=(globalThis as any).CS2Validation?.validateBase;
 
 const headers={"Access-Control-Allow-Origin":"*","Access-Control-Allow-Headers":"authorization,x-client-info,apikey,content-type,x-cs2-api-key","Access-Control-Allow-Methods":"GET,POST,OPTIONS","Content-Type":"application/json; charset=utf-8"};
 const env=(n:string)=>Deno.env.get(n)||"", API_KEY=env("CS2_ADMIN_API_KEY"), BACKEND_KEY=env("SUPABASE_BACKEND_KEY"), URL=env("SUPABASE_URL");
