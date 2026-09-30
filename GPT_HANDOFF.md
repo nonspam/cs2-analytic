@@ -26,23 +26,27 @@ GPT -> cs2-admin Edge Function -> shared validation -> commit_cs2_state -> cs2_a
 
 No GitHub redeploy is needed for data changes.
 
-## STILL REQUIRED OUTSIDE GITHUB
+## PRODUCTION STATUS — VERIFIED 2026-09-30
 
-These steps require the user's Supabase project credentials/access:
+Production project is already deployed and smoke-tested.
 
-1. Install/login Supabase CLI.
-2. Link project:
-   supabase link --project-ref <PROJECT_REF>
-3. Apply migration:
-   supabase db push
-4. Set secrets:
-   supabase secrets set CS2_ADMIN_API_KEY="<long-random-secret>"
-   supabase secrets set SUPABASE_BACKEND_KEY="<server-only-supabase-backend-key>"
-5. Deploy:
-   supabase functions deploy cs2-admin --no-verify-jwt
-6. Smoke test /health, GET state, POST validate.
-7. Perform one harmless test write in staging/disposable data.
-8. Verify the already-open site receives the update through Realtime.
+Verified:
+- Supabase Edge Function cs2-admin: ACTIVE, version 5, verify_jwt=false.
+- CS2_ADMIN_API_KEY is available to the Edge Function; ordinary HTTP outside the Function Tester authenticated successfully.
+- GET state works.
+- POST validate returns ok:true.
+- Production commit succeeded and incremented the DB version.
+- Repeating the same operation_id did not apply the operation twice.
+- A stale expected_version returned HTTP 409.
+- The shared validator is packaged inside the Edge Function deployment.
+- GitHub CI and GitHub Pages deployment are green on the current main commit.
+- Realtime publication/RLS configuration is present for cs2_app_state.
+
+The only independently unverified item is delivery of a Realtime UPDATE into an actual browser tab from this execution environment; this environment cannot establish the required browser WebSocket connection. The client now removes failed Realtime channels and retries after CHANNEL_ERROR/TIMED_OUT/CLOSED.
+
+## FUTURE VERIFICATION
+
+If a real browser/interactive computer session is available, keep the production site open and perform one harmless API commit. Confirm the open tab refreshes automatically. Do not create additional production writes when this check is unnecessary.
 
 ## SECURITY
 
@@ -62,7 +66,7 @@ GET latest state -> rebuild operation -> retry with a new operation_id.
 
 ## CURRENT LIMITATION
 
-This chat cannot complete the final Supabase deployment without access to the user's Supabase project/secrets. Do not claim production deployment has happened until the smoke tests succeed.
+A browser-level Realtime delivery check is the only remaining verification gap. Do not describe it as a Realtime failure: server-side publication/RLS and the client reconnect logic are already verified.
 
 ## FIRST THING FOR THE NEXT CHAT
 
