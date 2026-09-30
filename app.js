@@ -12,14 +12,62 @@ const mapKey=name=>String(name||'').trim().toLowerCase();
 const mapAsset=name=>`assets/maps/${encodeURIComponent(mapKey(name))}.svg`;
 const mapRemoteAsset=name=>`https://raw.githubusercontent.com/ghostcap-gaming/cs2-map-images/main/cs2/de_${encodeURIComponent(mapKey(name))}.png`;
 const mapIconRemoteAsset=name=>`https://raw.githubusercontent.com/MurkyYT/cs2-map-icons/main/images/de_${encodeURIComponent(mapKey(name))}.png`;
-const mapBg=name=>`linear-gradient(180deg,rgba(3,9,16,.04),rgba(3,9,16,.72)),url('${mapRemoteAsset(name)}'),url('${mapAsset(name)}')`;
+const mapBg=name=>`linear-gradient(180deg,rgba(3,9,16,.04),rgba(3,9,16,.72)),url('${mapAsset(name)}')`;
 const trendMarkup=(value,label='')=>{const n=Number(value);if(!Number.isFinite(n))return `<em class="trend-flat">— ${esc(label)}</em>`;const up=n>=0;return `<em class="${up?'trend-up':'trend-down'}">${up?'↑':'↓'} ${fmt(Math.abs(n),1)}${label?` ${esc(label)}`:''}</em>`};
-const mapThumb=(name,size='')=>`<div class="map-thumb ${size}" style="background-image:${mapBg(name)}"><img class="map-logo-mini" src="${mapIconRemoteAsset(name)}" alt="" onerror="this.style.display='none'"><span>${esc(name||'CS2')}</span></div>`;
+const mapThumb=(name,size='')=>`<div class="map-thumb ${size}" style="background-image:${mapBg(name)}"><span>${esc(name||'CS2')}</span></div>`;
 
-async function loadData(name){try{const r=await fetch('data/'+name+'.json',{cache:'no-store'});if(!r.ok)throw Error(`data/${name}.json: HTTP ${r.status}`);return r.json()}catch(e){const embedded=window.CS5_EMBEDDED_DATA?.[name];if(embedded)return embedded;throw e}}
+async function loadData(name){const embedded=window.CS5_EMBEDDED_DATA?.[name];if(embedded)return embedded;try{const r=await fetch('data/'+name+'.json',{cache:'no-store'});if(!r.ok)throw Error(`data/${name}.json: HTTP ${r.status}`);return r.json()}catch(e){throw e}}
 async function loadServerState(){if(window.CS2Cloud?.configured){try{return await CS2Cloud.load()}catch(e){state.storageWarning='Облачная база пока недоступна: '+(e?.message||'ошибка подключения') ;return null}}if(location.protocol!=='http:'&&location.protocol!=='https:')return null;try{const r=await fetch('/api/state',{cache:'no-store'});if(!r.ok)return null;const x=await r.json();if(!validateBase(x))throw Error('Серверная база не прошла проверку');return x}catch{return null}}
 function applyLoadedState(candidate,audit=[]){BASE.players=JSON.parse(JSON.stringify(candidate.players));BASE.maps=JSON.parse(JSON.stringify(candidate.maps));BASE.matches=JSON.parse(JSON.stringify(candidate.matches));BASE.aliases=JSON.parse(JSON.stringify(candidate.aliases));DB.players=JSON.parse(JSON.stringify(candidate.players));DB.maps=JSON.parse(JSON.stringify(candidate.maps));DB.matches=JSON.parse(JSON.stringify(candidate.matches));DB.aliases=JSON.parse(JSON.stringify(candidate.aliases));SERVER_AUDIT=Array.isArray(candidate.audit)?JSON.parse(JSON.stringify(candidate.audit)):Array.isArray(audit)?JSON.parse(JSON.stringify(audit)):[];normalizeState();}
-async function load(){try{const remote=await loadServerState();if(remote){state.serverSync=true;state.cloudMode=!!window.CS2Cloud?.configured;state.serverVersion=remote.updated_at||null;applyLoadedState(remote,remote.audit);if(state.cloudMode){try{state.cloudAdmin=await CS2Cloud.isAdmin();state.logged=state.cloudAdmin}catch{state.cloudAdmin=false;state.logged=false}}render();connectServerEvents();return}const [p,m,ma,a]=await Promise.all(['players','maps','matches','aliases'].map(loadData));let ov=null;try{ov=JSON.parse(localStorage.getItem('cs5_base_override')||'null')}catch{ov=null}const candidate=ov&&Array.isArray(ov.players)&&Array.isArray(ov.maps)&&Array.isArray(ov.matches)&&ov.aliases&&typeof ov.aliases==='object'?ov:{players:p.players,maps:m.maps,matches:ma.matches,aliases:a.aliases};if(!validateBase(candidate))throw Error('База не прошла проверку');applyLoadedState(candidate);hydrate();if(!validateBase(DB))throw Error('Локальные изменения повредили базу');render();if(state.hydrationError)toast(state.hydrationError);else if(state.storageWarning)toast(state.storageWarning)}catch(e){state.bootError=e?.message||'Не удалось загрузить базу';const v=$('#view');if(v)v.innerHTML=`<section class="section"><div class="panel card"><div class="eyebrow">SYSTEM ERROR</div><h2>База не загружена</h2><div class="notice">${esc(state.bootError)}</div><div class="footer-note">Проверь наличие папки data рядом с index.html. Данные не были изменены.</div><button class="btn primary" onclick="location.reload()">ПОВТОРИТЬ</button></div></section>`;}}
+async function load(){
+  try{
+    const embedded=window.CS5_EMBEDDED_DATA||{};
+    let candidate=(Array.isArray(embedded.players)&&Array.isArray(embedded.maps)&&Array.isArray(embedded.matches)&&embedded.aliases&&typeof embedded.aliases==='object')
+      ? {players:embedded.players,maps:embedded.maps,matches:embedded.matches,aliases:embedded.aliases}
+      : null;
+    if(!candidate){
+      const [p,m,ma,a]=await Promise.all(['players','maps','matches','aliases'].map(loadData));
+      candidate={players:p.players,maps:m.maps,matches:ma.matches,aliases:a.aliases};
+    }
+    let ov=null;
+    try{ov=JSON.parse(localStorage.getItem('cs5_base_override')||'null')}catch{ov=null}
+    if(!window.CS2Cloud?.configured&&ov&&Array.isArray(ov.players)&&Array.isArray(ov.maps)&&Array.isArray(ov.matches)&&ov.aliases&&typeof ov.aliases==='object')candidate=ov;
+    if(!validateBase(candidate))throw Error('База не прошла проверку');
+    applyLoadedState(candidate);
+    hydrate();
+    if(!validateBase(DB))throw Error('Локальные изменения повредили базу');
+
+    state.cloudMode=!!window.CS2Cloud?.configured;
+    state.serverSync=state.cloudMode;
+    render();
+
+    if(state.hydrationError)toast(state.hydrationError);
+    else if(state.storageWarning)toast(state.storageWarning);
+
+    if(!state.cloudMode)return;
+
+    // Cloud data/auth refresh runs after the first paint, so the dashboard is usable immediately.
+    const remote=await loadServerState();
+    if(remote){
+      state.serverSync=true;
+      state.serverVersion=remote.updated_at||null;
+      applyLoadedState(remote,remote.audit);
+      try{state.cloudAdmin=await CS2Cloud.isAdmin();state.logged=state.cloudAdmin}catch{state.cloudAdmin=false;state.logged=false}
+      render();
+      connectServerEvents();
+    }else{
+      // Keep cloud mode enabled so login/commit still use Supabase if the initial read is temporarily slow.
+      state.serverSync=true;
+      state.cloudAdmin=false;
+      state.logged=false;
+      if(state.storageWarning)toast(state.storageWarning);
+    }
+  }catch(e){
+    state.bootError=e?.message||'Не удалось загрузить базу';
+    const v=$('#view');
+    if(v)v.innerHTML=`<section class="section"><div class="panel card"><div class="eyebrow">SYSTEM ERROR</div><h2>База не загружена</h2><div class="notice">${esc(state.bootError)}</div><div class="footer-note">Проверь наличие папки data рядом с index.html. Данные не были изменены.</div><button class="btn primary" onclick="location.reload()">ПОВТОРИТЬ</button></div></section>`;
+  }
+}
 async function refreshFromServer(silent=false){if(!state.serverSync)return false;try{const x=window.CS2Cloud?.configured?await CS2Cloud.load():await (async()=>{const r=await fetch('/api/state',{cache:'no-store'});if(!r.ok)throw Error('server unavailable');return r.json()})();if(!validateBase(x))throw Error('invalid server state');applyLoadedState(x,x.audit);state.serverVersion=x.updated_at||null;render();if(!silent)toast('Данные синхронизированы');return true}catch(e){if(!silent)toast('Не удалось синхронизировать данные');return false}}
 function connectServerEvents(){if(!state.serverSync||SERVER_EVENT_SOURCE)return;if(window.CS2Cloud?.configured){CS2Cloud.subscribe(()=>refreshFromServer(true));return}try{SERVER_EVENT_SOURCE=new EventSource('/api/events');SERVER_EVENT_SOURCE.addEventListener('update',()=>refreshFromServer(true));SERVER_EVENT_SOURCE.onerror=()=>{if(SERVER_REFRESH_TIMER)return;SERVER_REFRESH_TIMER=setInterval(()=>refreshFromServer(true),3000)}}catch{SERVER_REFRESH_TIMER=setInterval(()=>refreshFromServer(true),3000)}}
 function hydrate(){let additions=[];try{additions=window.__cs5HydrateAdditions||null}catch{additions=null}if(!Array.isArray(additions)){additions=[];try{const raw=localStorage.getItem('cs5_additions');if(raw){const parsed=JSON.parse(raw);if(Array.isArray(parsed))additions=parsed;else state.storageWarning='Хранилище cs5_additions повреждено: ожидается массив. Используется безопасное пустое состояние.'}}catch{state.storageWarning='Хранилище cs5_additions повреждено: JSON не читается. Используется безопасное пустое состояние.'}}if(!additions.length)return;const snapshot=JSON.parse(JSON.stringify(DB));try{for(const x of additions){if(!x||typeof x!=='object')throw Error('invalid local operation');if(!['map','match','player','aliases','player_patch','match_patch','map_patch'].includes(x.kind))throw Error('unknown local operation');if(x.kind==='map'&&(!x.map||typeof x.map!=='object'))throw Error('map payload missing');if(x.kind==='match'&&(!x.match||typeof x.match!=='object'))throw Error('match payload missing');if(x.kind==='player'&&(!x.player||typeof x.player!=='object'))throw Error('player payload missing');if(x.kind==='aliases'&&(!x.aliases||typeof x.aliases!=='object'||Array.isArray(x.aliases)))throw Error('aliases payload missing');if(['player_patch','match_patch','map_patch'].includes(x.kind)&&(!x.patch||typeof x.patch!=='object'||Array.isArray(x.patch)))throw Error('patch payload missing');if(x.kind==='map'&&x.map)DB.maps.push(x.map);if(x.kind==='match'&&x.match)DB.matches.push(x.match);if(x.kind==='player'&&x.player)DB.players.push(x.player);if(x.kind==='aliases')Object.assign(DB.aliases,x.aliases||{});if(x.kind==='player_patch'){const p=DB.players.find(p=>p.player_id===x.player_id);if(!p)throw Error('player patch target missing');Object.assign(p,x.patch||{})}if(x.kind==='match_patch'){const m=DB.matches.find(m=>m.match_id===x.match_id);if(!m)throw Error('match patch target missing');Object.assign(m,x.patch||{})}if(x.kind==='map_patch'){const m=DB.maps.find(m=>m.map_id===x.map_id);if(!m)throw Error('map patch target missing');Object.assign(m,x.patch||{})}}if(!validateBase(DB))throw Error('invalid hydrated base')}catch{DB.players=snapshot.players;DB.maps=snapshot.maps;DB.matches=snapshot.matches;DB.aliases=snapshot.aliases;state.hydrationError='Локальные изменения не применены: обнаружена повреждённая или несовместимая запись. Исходная база сохранена.'}}
@@ -88,7 +136,7 @@ function home(v){
     </aside>
 
     <section class="home-center">
-      <section class="panel home-hero home-rebuild-hero" style="--hero-map:url('assets/maps/nuke.svg')">
+      <section class="panel home-hero home-rebuild-hero" style="--hero-map:url('assets/maps/nuke.png')">
         <div class="hero-copy"><div class="eyebrow">CS2 ANALYTICS</div><h1>Добро пожаловать в<br><strong>CS2 ANALYTICS</strong></h1><p>Твоя статистика. Твой анализ. Твоя история игр.</p></div>
         <div class="hero-note">Статистика<br>не врёт.<br>Она просто<br>показывает<br>правду.</div>
         <div class="hero-counters"><div><b>${activeMaps.length}</b><span>Карт</span></div><div><b>${active.length}</b><span>Игроков</span></div><div><b>${new Set(activeMaps.map(x=>x.map)).size}</b><span>Типов карт</span></div></div><div class="hero-watermark" style="position:absolute;right:22px;bottom:16px;z-index:2;color:rgba(150,195,232,.72);font-size:10px;font-weight:800;letter-spacing:.13em;white-space:nowrap;max-width:42%;overflow:hidden;text-overflow:ellipsis">CS2 ANALYTICS</div>
@@ -112,7 +160,7 @@ function home(v){
     <aside class="home-right">
       <section class="panel home-panel top-players-panel"><div class="section-head"><div><h2>Топ игроков</h2><div class="muted">По Индекс игрока</div></div><button class="text-link" onclick="state.tab='analytics';render()">Все ›</button></div><div>${top.map((q,i)=>`<div class="top-player-row"><strong class="place">${i+1}</strong><div><b>${esc(q.p.display_name)}</b><span>Индекс ${fmt(q.idx,1)}</span></div>${trendMarkup(q.fo.trend)}</div>`).join('')||'<div class="empty">Нет игроков.</div>'}</div></section>
       <section class="panel home-panel news-panel"><div class="section-head"><div><h2>Последние новости</h2><div class="muted">Автоматическая лента</div></div><button class="text-link" onclick="state.tab='records';render()">Все ›</button></div><div class="news">${homeNews(lastMatch,latestMap,audit,top).map(n=>`<div class="news-item"><b>${esc(n.title)}</b><span>${esc(n.text)}</span></div>`).join('')}</div></section>
-      <section class="panel home-promo"><div><b>Анализируй.<br>Улучшайся.</b><span>CS5 Analytics</span></div><div class="promo-mark">CS2</div></section>
+      <section class="panel home-promo"><div class="promo-copy"><span class="promo-kicker">CS2 ANALYTICS</span><b>Анализируй.<br>Улучшайся.</b><small>Смотри не только на K/D — смотри на игру целиком.</small></div><div class="promo-mark" aria-hidden="true">CS2</div></section>
     </aside>
   </section>`;
   $('#homeMetric').value=state.metric;
