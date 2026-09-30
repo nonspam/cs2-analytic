@@ -562,6 +562,50 @@
         }
       ],
       "series_score_source": "explicit_header"
+    },
+    {
+      "format": "BO1",
+      "header": "bo1 13:11 mirage",
+      "map_ids": [
+        "map_local_1790694105818_1"
+      ],
+      "archived": true,
+      "match_id": "match_local_1790694105818",
+      "played_at": "2026-09-29T15:01:45.818Z",
+      "archived_at": "2026-09-29T15:02:01.956Z",
+      "source_kind": "detailed_local",
+      "series_score": "1:0",
+      "series_score_source": "local_admin",
+      "series_aggregate_stats": [],
+      "series_stats_available": false,
+      "team_a": [
+        "gletcher",
+        "donater",
+        "подушка пердушка",
+        "пяточки",
+        "DaDa_VoVa"
+      ],
+      "team_b": [
+        "дядя",
+        "Patr1k",
+        "эгоист",
+        "bigchungus",
+        "gamiersanek"
+      ],
+      "team_assignment_source": "historical_source_order",
+      "team_assignment_note": "Восстановлено из порядка игроков исходной записи; неполный состав сохранён как есть.",
+      "player_ids": [
+        "gletcher",
+        "donater",
+        "подушка пердушка",
+        "пяточки",
+        "DaDa_VoVa",
+        "дядя",
+        "Patr1k",
+        "эгоист",
+        "bigchungus",
+        "gamiersanek"
+      ]
     }
   ]
 }
