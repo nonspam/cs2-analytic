@@ -141,3 +141,5 @@ For production data changes use the protected Supabase admin API described in AP
 GPT_HANDOFF.md contains the concise continuation context for another ChatGPT.
 
 GitHub Pages deployment is defined in .github/workflows/pages.yml. Supabase data changes do not require a Pages deploy.
+
+<!-- pages redeploy marker -->
