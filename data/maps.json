@@ -4917,6 +4917,91 @@
       "player_stats": null,
       "source_header": "bo3 2:1 2-win nuke-dust2-mirage",
       "source_note": "Per-map player K/D/A is not present in source; series aggregate only."
+    },
+    {
+      "map": "mirage",
+      "score": {
+        "team_a": 13,
+        "team_b": 11
+      },
+      "map_id": "map_local_1790694105818_1",
+      "archived": true,
+      "match_id": "match_local_1790694105818",
+      "map_index": 1,
+      "player_stats": [
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "gletcher",
+          "player_id": "gletcher"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "donater",
+          "player_id": "donater"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "подушка пердушка",
+          "player_id": "подушка пердушка"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "пяточки",
+          "player_id": "пяточки"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "DaDa_VoVa",
+          "player_id": "DaDa_VoVa"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "дядя",
+          "player_id": "дядя"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "Patr1k",
+          "player_id": "Patr1k"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "эгоист",
+          "player_id": "эгоист"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "bigchungus",
+          "player_id": "bigchungus"
+        },
+        {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 6,
+          "raw_name": "gamiersanek",
+          "player_id": "gamiersanek"
+        }
+      ],
+      "source_header": "local admin entry",
+      "stats_available": true
     }
   ]
 }
