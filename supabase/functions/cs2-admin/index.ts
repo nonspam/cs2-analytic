@@ -12,7 +12,7 @@ const id=(x:unknown,max=128)=>{const s=String(x??"").trim();return s&&s.length<=
 const clone=<T>(x:T):T=>JSON.parse(JSON.stringify(x));
 function apply(s:any,o:any){
 if(o?.kind==="map")s.maps.push(o.map);else if(o?.kind==="match")s.matches.push(o.match);else if(o?.kind==="player")s.players.push(o.player);else if(o?.kind==="aliases")Object.assign(s.aliases,o.aliases||{});
-else if(["player_patch","match_patch","map_patch"].includes(o?.kind)){const key={player_patch:"players",match_patch:"matches",map_patch:"maps"}[o.kind],ik={player_patch:"player_id",match_patch:"match_id",map_patch:"map_id"}[o.kind],r=s[key].find((x:any)=>x?.[ik]===o[ik]);if(!r)throw Error("object not found: "+o.kind);Object.assign(r,o.patch||{})}else throw Error("unsupported operation: "+o?.kind);
+else if(["player_patch","match_patch","map_patch"].includes(o?.kind)){const keyMap:Record<string,string>={player_patch:"players",match_patch:"matches",map_patch:"maps"},idMap:Record<string,string>={player_patch:"player_id",match_patch:"match_id",map_patch:"map_id"};const key=keyMap[o.kind],ik=idMap[o.kind],r=s[key].find((x:any)=>x?.[ik]===o[ik]);if(!r)throw Error("object not found: "+o.kind);Object.assign(r,o.patch||{})}else throw Error("unsupported operation: "+o?.kind);
 }
 async function row(){const r=await db.from("cs2_app_state").select("id,state,version,updated_at,updated_by").eq("id",1).single();if(r.error)throw Error(errorMessage(r.error));return r.data}
 async function commit(b:any){
