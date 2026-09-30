@@ -91,7 +91,7 @@ function home(v){
       <section class="panel home-hero home-rebuild-hero" style="--hero-map:url('assets/maps/nuke.svg')">
         <div class="hero-copy"><div class="eyebrow">CS2 ANALYTICS</div><h1>Добро пожаловать в<br><strong>CS2 ANALYTICS</strong></h1><p>Твоя статистика. Твой анализ. Твоя история игр.</p></div>
         <div class="hero-note">Статистика<br>не врёт.<br>Она просто<br>показывает<br>правду.</div>
-        <div class="hero-counters"><div><b>${activeMaps.length}</b><span>Карт</span></div><div><b>${active.length}</b><span>Игроков</span></div><div><b>${new Set(activeMaps.map(x=>x.map)).size}</b><span>Типов карт</span></div></div>
+        <div class="hero-counters"><div><b>${activeMaps.length}</b><span>Карт</span></div><div><b>${active.length}</b><span>Игроков</span></div><div><b>${new Set(activeMaps.map(x=>x.map)).size}</b><span>Типов карт</span></div></div><div class="hero-watermark">CS2 ANALYTICS</div>
       </section>
 
       <section class="home-metrics">
@@ -199,13 +199,16 @@ function openPlayerDetail(id){
     </div>`).join('');
 
   const mapRows=rows.slice().reverse().slice(0,10).map(r=>{
-    const kd=r.deaths?Number(r.kills)/Number(r.deaths):0;
+    const kd=r.deaths?Number(r.kills)/Number(r.deaths):(Number(r.kills)>0?Infinity:1);
     const tone=kdTone(kd);
     const num=String(r.map_id||'').match(/(?:_|-)(\d+)$/)?.[1]||'';
+    const mm=DB.maps.find(x=>x.map_id===r.map_id);
+    const mv=(mm?.player_stats||[]).slice().sort((a,b)=>((Number(b.kills)||0)-(Number(b.deaths)||0)+0.25*(Number(b.assists)||0))-((Number(a.kills)||0)-(Number(a.deaths)||0)+0.25*(Number(a.assists)||0)))[0];
+    const mvp=playerName(mv?.player_id||'—');
     return `<div class="map-history-row compact-row">
       <div><b class="map-history-name">${esc(r.map)}</b></div>
       <span class="map-kda ${tone}">K/D/A ${r.kills}/${r.deaths}/${r.assists}</span>
-      <strong class="map-mvp-link">MVP · ${esc(playerName(r.player_id||id))}</strong>
+      <strong class="map-mvp-link">MVP · ${esc(mvp)}</strong>
       <span class="map-history-index">${num?`#${num}`:''}</span>
     </div>`;
   }).join('');
