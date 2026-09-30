@@ -204,3 +204,76 @@ body{overscroll-behavior-y:none;-webkit-overflow-scrolling:touch}
 .compact-history-row .map-history-index{color:var(--blue)!important}
 .compact-history-row .map-history-name{color:#fff!important}
 @media(max-width:700px){.form-window-grid{grid-template-columns:1fr 1fr}}
+
+
+/* 2026-10-02 homepage polish + startup performance pass */
+.home-promo{
+  min-height:116px;
+  height:116px;
+  padding:14px 15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 86% 50%,rgba(52,123,201,.24),transparent 38%),
+    linear-gradient(145deg,#0b1826,#08121d);
+}
+.home-promo .promo-copy{
+  min-width:0;
+  max-width:calc(100% - 54px);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.home-promo .promo-kicker{
+  display:block;
+  color:#58b9ff;
+  font-size:8px;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.14em;
+  margin:0 0 3px;
+  white-space:nowrap;
+}
+.home-promo b{
+  display:block;
+  min-width:0;
+  font-size:17px;
+  line-height:1.04;
+  letter-spacing:-.02em;
+  white-space:normal;
+}
+.home-promo small{
+  display:block;
+  min-width:0;
+  color:#91a9bd;
+  font-size:9px;
+  line-height:1.28;
+  white-space:normal;
+  overflow:hidden;
+}
+.home-promo .promo-mark{
+  flex:0 0 auto;
+  font-size:22px;
+  line-height:1;
+  letter-spacing:.06em;
+  color:#58a8e8;
+  opacity:.82;
+  text-shadow:0 0 18px rgba(72,167,238,.18);
+}
+.home-rebuild-hero{
+  background-image:
+    linear-gradient(90deg,rgba(5,12,20,.94) 0%,rgba(5,12,20,.74) 45%,rgba(5,12,20,.20) 100%),
+    var(--hero-map),
+    linear-gradient(135deg,#0d1d31 0%,#09131f 58%,#07101a 100%) !important;
+  background-size:cover,cover,auto !important;
+  background-position:center,center,center !important;
+}
+.map-thumb{background-size:cover;background-position:center}
+.map-thumb .map-logo-mini{display:none!important}
+
+/* Avoid expensive compositing on every card while scrolling. */
+.panel,.card,.home-panel{transform:none}
