@@ -16,9 +16,9 @@ else if(["player_patch","match_patch","map_patch"].includes(o?.kind)){const key=
 }
 async function row(){const r=await db.from("cs2_app_state").select("id,state,version,updated_at,updated_by").eq("id",1).single();if(r.error)throw Error(errorMessage(r.error));return r.data}
 async function commit(b:any){
-const op=id(b.operation_id);if(!op)throw Error("operation_id is required");const ops=Array.isArray(b.operations)?b.operations:[];if(!ops.length||ops.length>100)throw Error("operations must contain 1-100 items");
-const r=await row(),next=clone(r.state);for(const o of ops)apply(next,o);const v=validateBase(next);if(!v.ok)throw Error(v.error);
-const a=b.audit||{},q=await db.rpc("commit_cs2_state",{p_expected_version:Number(r.version),p_state:next,p_operation_id:op,p_action:id(a.action,80)||"API_COMMIT",p_target:id(a.target),p_detail:a.detail&&typeof a.detail==="object"?a.detail:{},p_actor:id(b.actor,128)||"api",p_updated_by:null});
+const op=id(b.operation_id);if(!op)throw Error("operation_id is required");const ops=Array.isArray(b.operations)?b.operations:[];if(!ops.length||ops.length>100)throw Error("operations must contain 1-100 items");if(b.expected_version!=null&&(!Number.isInteger(Number(b.expected_version))||Number(b.expected_version)<0))throw Error("expected_version must be a non-negative integer");
+const r=await row(),next=clone(r.state);for(const o of ops)apply(next,o);const v=validateBase(next);if(!v.ok)throw Error(v.error);const expected=b.expected_version==null?Number(r.version):Number(b.expected_version);if(!Number.isInteger(expected)||expected<0)throw Error("expected_version must be a non-negative integer");
+const a=b.audit||{},q=await db.rpc("commit_cs2_state",{p_expected_version:expected,p_state:next,p_operation_id:op,p_action:id(a.action,80)||"API_COMMIT",p_target:id(a.target),p_detail:a.detail&&typeof a.detail==="object"?a.detail:{},p_actor:id(b.actor,128)||"api",p_updated_by:null});
 if(q.error)throw Error(errorMessage(q.error));const out=Array.isArray(q.data)?q.data[0]:q.data;return {ok:true,operation_id:op,version:out.version,updated_at:out.updated_at};
 }
 Deno.serve(async req=>{
