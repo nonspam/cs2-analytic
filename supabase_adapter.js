@@ -3,7 +3,7 @@
   const cfg=window.CS2_SUPABASE_CONFIG||{};
   const sdk=window.supabase;
   const configured=!!(sdk&&cfg.url&&cfg.key&&/^https:\/\/[^\s]+\.supabase\.co$/i.test(cfg.url));
-  let client=null,channel=null,commitQueue=Promise.resolve();
+  let client=null,channel=null,realtimeRetryTimer=null,realtimeCallback=null,commitQueue=Promise.resolve();
   if(configured)client=sdk.createClient(cfg.url,cfg.key,{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}});
   const clone=x=>JSON.parse(JSON.stringify(x));
   const api=()=>window.CS2Validation;
@@ -12,8 +12,9 @@
   async function isAdmin(){if(!configured)return false;const {data:{session}}=await client.auth.getSession();if(!session)return false;const {data,error}=await client.rpc('is_cs2_admin');if(error)throw error;return data===true}
   async function signIn(email,password){if(!configured)throw Error('Supabase не настроен');const {data,error}=await client.auth.signInWithPassword({email,password});if(error)throw error;if(!data.session)throw Error('Сессия не создана');if(!(await isAdmin())){await client.auth.signOut();throw Error('Этот аккаунт не добавлен как администратор сайта.')}return data}
   async function signOut(){if(configured)await client.auth.signOut()}
-  function subscribe(onChange){if(!configured||channel)return;channel=client.channel('cs2-app-state-live').on('postgres_changes',{event:'UPDATE',schema:'public',table:'cs2_app_state',filter:'id=eq.1'},p=>onChange?.(p)).subscribe()}
-  function unsubscribe(){if(channel&&client){client.removeChannel(channel);channel=null}}
+  function scheduleRealtimeRetry(){if(!configured||realtimeRetryTimer)return;realtimeRetryTimer=setTimeout(()=>{realtimeRetryTimer=null;if(realtimeCallback&&!channel)subscribe(realtimeCallback)},3000)}
+  function subscribe(onChange){if(!configured)return;realtimeCallback=onChange;if(channel)return;channel=client.channel('cs2-app-state-live').on('postgres_changes',{event:'UPDATE',schema:'public',table:'cs2_app_state',filter:'id=eq.1'},p=>realtimeCallback?.(p)).subscribe(status=>{if(status==='CHANNEL_ERROR'||status==='TIMED_OUT'||status==='CLOSED'){if(channel){client.removeChannel(channel);channel=null}scheduleRealtimeRetry()}})}
+  function unsubscribe(){if(realtimeRetryTimer){clearTimeout(realtimeRetryTimer);realtimeRetryTimer=null}realtimeCallback=null;if(channel&&client){client.removeChannel(channel);channel=null}}
   function commit(ops,audit){
     if(!configured)return Promise.reject(Error('Supabase не настроен'));
     const task=commitQueue.then(async()=>{
