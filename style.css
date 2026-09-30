@@ -179,3 +179,28 @@ body{overscroll-behavior-y:none;-webkit-overflow-scrolling:touch}
 /* Career summary emphasis */
 .career-summary{margin-top:8px;font-size:17px;line-height:1.55;font-weight:650;letter-spacing:.01em;color:var(--text);white-space:normal}
 @media (min-width:900px){.career-summary{font-size:18px}}
+
+/* 2026-10-01 production visual pass */
+.home-rebuild-hero{
+  background-image:linear-gradient(90deg,rgba(5,12,20,.94) 0%,rgba(5,12,20,.76) 46%,rgba(5,12,20,.30) 100%),var(--hero-map),radial-gradient(circle at 78% 45%,rgba(43,104,165,.34),transparent 34%),linear-gradient(135deg,#0d1d31 0%,#09131f 58%,#07101a 100%)!important;
+  background-size:cover,cover,auto,auto!important;
+  background-position:center,center,center,center!important;
+}
+.home-rebuild-hero:after{background:linear-gradient(120deg,transparent 35%,rgba(80,160,240,.04) 36%,transparent 37%),linear-gradient(165deg,transparent 62%,rgba(80,160,240,.04) 63%,transparent 64%)}
+.brand{gap:6px}
+.brand-cs2{font-size:16px;letter-spacing:.04em}
+.brand-analytics{font-size:7px;letter-spacing:.13em;margin-left:0;margin-top:2px;white-space:nowrap}
+.form-window-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.form-window-card{padding:12px;border:1px solid var(--line);border-radius:9px;background:#0a111a;display:grid;gap:5px}
+.form-window-card span{font-size:9px;color:var(--muted)}
+.form-window-card strong{font-size:18px}
+.form-window-card small,.era-card small{font-size:11px}
+.map-history-name{color:#fff}
+.map-kda.positive,.form-window-card small.positive,.era-card small.positive{color:var(--green)}
+.map-kda.negative,.form-window-card small.negative,.era-card small.negative{color:var(--red)}
+.map-kda:not(.positive):not(.negative),.form-window-card small:not(.positive):not(.negative),.era-card small:not(.positive):not(.negative){color:#fff}
+.map-mvp-link{color:var(--blue)!important;font-size:11px}
+.compact-history-row{grid-template-columns:58px 1fr!important;cursor:pointer}
+.compact-history-row .map-history-index{color:var(--blue)!important}
+.compact-history-row .map-history-name{color:#fff!important}
+@media(max-width:700px){.form-window-grid{grid-template-columns:1fr 1fr}}
