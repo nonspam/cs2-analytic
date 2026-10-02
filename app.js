@@ -136,7 +136,7 @@ function home(v){
     </aside>
 
     <section class="home-center">
-      <section class="panel home-hero home-rebuild-hero" style="--hero-map:url('assets/maps/nuke.svg')">
+      <section class="panel home-hero home-rebuild-hero" style="--hero-map:url('https://raw.githubusercontent.com/ghostcap-gaming/cs2-map-images/main/cs2/de_nuke.png')">
         <div class="hero-copy"><div class="eyebrow">CS2 ANALYTICS</div><h1>Добро пожаловать в<br><strong>CS2 ANALYTICS</strong></h1><p>Твоя статистика. Твой анализ. Твоя история игр.</p></div>
         <div class="hero-note">Статистика<br>не врёт.<br>Она просто<br>показывает<br>правду.</div>
         <div class="hero-counters"><div><b>${activeMaps.length}</b><span>Карт</span></div><div><b>${active.length}</b><span>Игроков</span></div><div><b>${new Set(activeMaps.map(x=>x.map)).size}</b><span>Типов карт</span></div></div><div class="hero-watermark" style="position:absolute;right:22px;bottom:16px;z-index:2;color:rgba(150,195,232,.72);font-size:10px;font-weight:800;letter-spacing:.13em;white-space:nowrap;max-width:42%;overflow:hidden;text-overflow:ellipsis">CS2 ANALYTICS</div>
