@@ -27,7 +27,7 @@
       if(entry){next.audit=Array.isArray(next.audit)?next.audit.slice(-499):[];next.audit.push(entry);next.audit=next.audit.slice(-500)}
       const {data,error}=await client.rpc('commit_cs2_state',{
         p_expected_version:Number(row.version),p_state:next,
-        p_operation_id:'web_'+Date.now()+'_'+Math.random().toString(36).slice(2,10),
+        p_operation_id:(audit?.action==='CREATE_MATCH'&&audit?.target?'web_'+audit.target:'web_'+Date.now()+'_'+Math.random().toString(36).slice(2,10)),
         p_action:entry?.action||'WEB_COMMIT',p_target:entry?.target||null,p_detail:entry?.detail||{},p_actor:user?.email||user?.id||'web',p_updated_by:user?.id||null
       });
       if(error)throw error;

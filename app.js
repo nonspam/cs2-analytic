@@ -84,6 +84,21 @@ function logAudit(action,target,detail={}){const entry={id:'audit_'+Date.now()+'
 function additions(){return state.serverSync?[]:safeJsonArray('cs5_additions')}
 function persistAdditions(a){if(state.serverSync){const xhr=new XMLHttpRequest();xhr.open('POST','/api/commit',false);xhr.setRequestHeader('Content-Type','application/json');xhr.send(JSON.stringify({operations:a.map((op,i)=>({...op,_sync_id:`${Date.now()}_${i}_${Math.random().toString(36).slice(2,8)}`}) )}));if(xhr.status<200||xhr.status>=300)throw Error('server commit failed');return}const next=JSON.stringify(a);const prev=localStorage.getItem('cs5_additions');try{localStorage.setItem('cs5_additions',next);if(localStorage.getItem('cs5_additions')!==next)throw Error('storage verification failed')}catch(e){try{if(prev===null)localStorage.removeItem('cs5_additions');else localStorage.setItem('cs5_additions',prev)}catch{};throw e}}
 function persistChange(a,audit){if(state.serverSync){if(window.CS2Cloud?.configured){const entry=audit?{id:'audit_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),at:new Date().toISOString(),action:audit.action,target:audit.target,detail:audit.detail||{}}:null;state.serverBusy=true;CS2Cloud.commit(a,entry).then(data=>{state.serverBusy=false;state.serverVersion=data.updated_at||null;if(entry){SERVER_AUDIT.push(entry);SERVER_AUDIT=SERVER_AUDIT.slice(-500)}}).catch(e=>{state.serverBusy=false;toast('Облачное сохранение не удалось: '+(e?.message||'ошибка'));refreshFromServer(true)});return true}const ops=a.map((op,i)=>({...op,_sync_id:`${Date.now()}_${i}_${Math.random().toString(36).slice(2,8)}`}));const entry=audit?{id:'audit_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),at:new Date().toISOString(),action:audit.action,target:audit.target,detail:audit.detail||{}}:null;const xhr=new XMLHttpRequest();xhr.open('POST','/api/commit',false);xhr.setRequestHeader('Content-Type','application/json');xhr.send(JSON.stringify({operations:ops,audit:entry}));if(xhr.status<200||xhr.status>=300)throw Error('server commit failed');if(entry){SERVER_AUDIT.push(entry);SERVER_AUDIT=SERVER_AUDIT.slice(-500)}return true}const nextAdd=JSON.stringify(a);const prevAdd=localStorage.getItem('cs5_additions');const prevAudit=localStorage.getItem('cs5_audit_log');let nextAudit=prevAudit;if(audit){const log=auditLog();log.push({id:'audit_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),at:new Date().toISOString(),action:audit.action,target:audit.target,detail:audit.detail||{}});nextAudit=JSON.stringify(log.slice(-500))}try{localStorage.setItem('cs5_additions',nextAdd);if(audit)localStorage.setItem('cs5_audit_log',nextAudit);if(localStorage.getItem('cs5_additions')!==nextAdd|| (audit&&localStorage.getItem('cs5_audit_log')!==nextAudit))throw Error('storage verification failed')}catch(e){try{if(prevAdd===null)localStorage.removeItem('cs5_additions');else localStorage.setItem('cs5_additions',prevAdd);if(prevAudit===null)localStorage.removeItem('cs5_audit_log');else localStorage.setItem('cs5_audit_log',prevAudit)}catch{};throw e}}
+async function persistChangeConfirmed(ops,audit){
+  if(state.serverSync&&window.CS2Cloud?.configured){
+    if(state.serverBusy)throw Error('Сохранение уже выполняется');
+    state.serverBusy=true;
+    try{
+      const entry=audit?{id:'audit_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),at:new Date().toISOString(),action:audit.action,target:audit.target,detail:audit.detail||{}}:null;
+      const data=await CS2Cloud.commit(ops,entry);
+      state.serverVersion=data.updated_at||null;
+      if(entry){SERVER_AUDIT.push(entry);SERVER_AUDIT=SERVER_AUDIT.slice(-500)}
+      return data;
+    }finally{state.serverBusy=false}
+  }
+  persistChange(ops,audit);
+  return null;
+}
 function normalizeState(){const ids=new Set(activePlayers().map(p=>p.player_id));const allIds=new Set(DB.players.map(p=>p.player_id));state.selected=state.selected.filter(id=>ids.has(id));if(!state.selected.length&&activePlayers()[0])state.selected=[activePlayers()[0].player_id];state.teamA=[...new Set(state.teamA.filter(id=>allIds.has(id)))].slice(0,5);state.teamB=[...new Set(state.teamB.filter(id=>allIds.has(id)&&!state.teamA.includes(id)))].slice(0,5)}
 function activePlayers(){return DB.players.filter(p=>p.is_active!==false)}
 function player(id){return DB.players.find(p=>p.player_id===id)}
@@ -496,44 +511,64 @@ function openTrash(){
   $('#view').insertAdjacentHTML('beforeend',`<div class=\"modal-back\" id=\"trashModal\"><div class=\"modal panel wide\"><div class=\"modal-head\"><div><div class=\"eyebrow\">АДМИН · КОРЗИНА</div><h2>УДАЛЁННЫЕ ИГРЫ</h2><div class=\"muted\">${archived.length} ${archived.length===1?'игра':'игр'} · данные сохранены</div></div><button class=\"close\" onclick=\"$('#trashModal')?.remove()\">×</button></div><div class=\"notice\">Удалённые игры здесь не учитываются в основной аналитике. Можно открыть полную статистику или вернуть игру обратно в базу.</div><div>${rows||'<div class=\"empty\">Корзина пуста.</div>'}</div></div></div>`);
 }
 function archiveMatch(id){const m=DB.matches.find(x=>x.match_id===id);if(!m)return;const archived_at=new Date().toISOString(),a=additions();a.push({kind:'match_patch',match_id:id,patch:{archived:true,archived_at}});for(const mp of DB.maps.filter(x=>x.match_id===id))a.push({kind:'map_patch',map_id:mp.map_id,patch:{archived:true}});try{persistChange(a,{action:'DELETE_MATCH_TO_TRASH',target:id})}catch(e){return toast('Не удалось сохранить изменения. Данные не изменены.')}m.archived=true;m.archived_at=archived_at;for(const mp of DB.maps.filter(x=>x.match_id===id))mp.archived=true;toast('Игра перемещена в корзину');render()}
-function openAddGame(){if(!state.logged){state.tab='settings';render();return}$('#view').insertAdjacentHTML('beforeend',`<div class="modal-back" id="modal"><div class="modal panel wide"><div class="modal-head"><h2>Добавить игру / серию</h2><button class="close" onclick="closeModal()">×</button></div><div class="two"><div class="field"><label>ФОРМАТ</label><select id="newFormat"><option value="BO1">BO1 — детальная карта</option><option value="BO3_COMPACT">BO3 — сумма серии</option></select></div><div class="field"><label>КАРТА / КАРТЫ</label><input id="newMaps" value="mirage" placeholder="mirage или nuke,mirage"></div></div><div class="notice">BO1 требует K/D/A по карте. BO3 сохраняет K/D/A только на уровне серии, если покарточных данных нет.</div><div class="two"><div class="field"><label>ДАТА / ВРЕМЯ</label><input id="newPlayedAt" type="datetime-local"></div><div class="field"><label>СЧЁТ СЕРИИ</label><input id="newScore" placeholder="1:0 или 2:1"></div></div><div class="field"><label>ИГРОКИ — K/D/A (1–10 игроков; только участники матча)</label><textarea id="newRows" rows="11" style="background:#080e16;color:#fff;border:1px solid var(--line);border-radius:8px;padding:10px" placeholder="gletcher 22/14/6
+function openAddGame(){if(!state.logged){state.tab='settings';render();return}let draftTime=Date.now(),draftMatchId='match_local_'+draftTime;while(DB.matches.some(x=>x.match_id===draftMatchId)){draftTime++;draftMatchId='match_local_'+draftTime}$('#view').insertAdjacentHTML('beforeend',`<div class="modal-back" id="modal" data-match-id="${draftMatchId}"><div class="modal panel wide"><div class="modal-head"><h2>Добавить игру / серию</h2><button class="close" onclick="closeModal()">×</button></div><div class="two"><div class="field"><label>ФОРМАТ</label><select id="newFormat"><option value="BO1">BO1 — детальная карта</option><option value="BO3_COMPACT">BO3 — сумма серии</option></select></div><div class="field"><label>КАРТА / КАРТЫ</label><input id="newMaps" value="mirage" placeholder="mirage или nuke,mirage"></div></div><div class="notice">BO1 требует K/D/A по карте. BO3 сохраняет K/D/A только на уровне серии, если покарточных данных нет.</div><div class="two"><div class="field"><label>ДАТА / ВРЕМЯ</label><input id="newPlayedAt" type="datetime-local"></div><div class="field"><label>СЧЁТ СЕРИИ</label><input id="newScore" placeholder="1:0 или 2:1"></div></div><div class="field"><label>ИГРОКИ — K/D/A (от 1 до 10 участников; можно вписать новое имя)</label><textarea id="newRows" rows="11" style="background:#080e16;color:#fff;border:1px solid var(--line);border-radius:8px;padding:10px" placeholder="gletcher 22/14/6
 donater 18/17/5
-..."></textarea></div><button class="btn primary" onclick="saveGame()">СОХРАНИТЬ И ПЕРЕСЧИТАТЬ</button></div></div>`)}
+..."></textarea></div><button class="btn primary" id="saveGameBtn" onclick="saveGame()">СОХРАНИТЬ И ПЕРЕСЧИТАТЬ</button></div></div>`)}
 function closeModal(){document.getElementById('modal')?.remove()}
-function saveGame(){
-  const format=$('#newFormat').value,maps=$('#newMaps').value.split(',').map(x=>x.trim().toLowerCase()).filter(Boolean),playedAt=$('#newPlayedAt').value,score=$('#newScore').value.trim(),rows=$('#newRows').value.trim().split(/\n+/).map(x=>x.trim()).filter(Boolean);
-  const sm=score.match(/^(\d+)\s*[:\-]\s*(\d+)$/);
-  if(!sm||!maps.length||!rows.length)return toast('Проверь формат, карты, счёт и игроков');
-  if(playedAt&&Number.isNaN(Date.parse(playedAt)))return toast('Некорректная дата/время игры');
-  if(+sm[1]<0||+sm[2]<0)return toast('Счёт не может быть отрицательным');
-  if(format==='BO1'&&Math.max(+sm[1],+sm[2])<13)return toast('Для карты нужен реальный CS2-счёт: победитель должен набрать минимум 13 раундов.');
-  if(format==='BO1'&&+sm[1]===+sm[2])return toast('Ничья для карты не допускается.');
-  if(format==='BO1'&&maps.length!==1)return toast('BO1 должен содержать одну карту');
-  if(format==='BO3_COMPACT'&&(maps.length<2||maps.length>3))return toast('BO3 должен содержать 2 или 3 карты');
-  if(format==='BO3_COMPACT'){
-    const a=+sm[1],b=+sm[2],needed=(a===2&&b===0)||(a===0&&b===2)?2:((a===2&&b===1)||(a===1&&b===2)?3:0);
-    if(!needed)return toast('Для BO3 используй счёт 2:0, 0:2, 2:1 или 1:2.');
-    if(needed!==maps.length)return toast('Для BO3 число карт должно совпадать со счётом серии: 2:0 = 2 карты, 2:1 = 3 карты.');
-  }
-  const knownMaps=new Set(DB.maps.filter(x=>x.archived!==true).map(x=>x.map));
-  if(maps.some(x=>!knownMaps.has(x)))return toast('Неизвестная карта. Используй карту из каталога.');
-  if(new Set(maps).size!==maps.length)return toast('Одна и та же карта указана дважды.');
-  const ps=[];
-  for(const line of rows){
-    const m=line.match(/^(.+?)\s+(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)$/);if(!m)return toast('Строка не распознана: '+line);
-    const pid=DB.aliases[m[1]]||activePlayers().find(p=>p.player_id===m[1])?.player_id;if(!pid)return toast('Неизвестный alias: '+m[1]);
-    if(ps.some(x=>x.player_id===pid))return toast('Игрок указан дважды: '+pid);
-    ps.push({raw_name:m[1],player_id:pid,kills:+m[2],deaths:+m[3],assists:+m[4]});
-  }
-  if(ps.length<1||ps.length>10)return toast('Укажи от 1 до 10 уникальных игроков — только тех, кто участвовал в матче');
-  const baseNow=Date.now();let now=baseNow,mid='match_local_'+now;while(DB.matches.some(x=>x.match_id===mid)){now++;mid='match_local_'+now}
-  const add=additions(),mapIds=[],mapObjects=[];
-  maps.forEach((map,i)=>{const mapid='map_local_'+now+'_'+(i+1);mapIds.push(mapid);const detail=format==='BO1';const obj={map_id:mapid,match_id:mid,map_index:i+1,map,score:format==='BO1'?{team_a:+sm[1],team_b:+sm[2]}:null,stats_available:detail,player_stats:detail?ps.map(x=>({...x})):[],source_header:'local admin entry'};mapObjects.push(obj);add.push({kind:'map',map:obj})});
-  const match={match_id:mid,played_at:playedAt||new Date().toISOString(),source_kind:format==='BO1'?'detailed_local':'compact_bo3',format:format==='BO1'?'BO1':'BO3',header:`${format.toLowerCase()} ${score} ${maps.join('-')}`,map_ids:mapIds,series_score:format==='BO1'?`${+sm[1]>+sm[2]?1:0}:${+sm[2]>+sm[1]?1:0}`:score,series_stats_available:format!=='BO1',series_score_source:'local_admin',series_aggregate_stats:format==='BO1'?[]:ps.map(x=>({...x}))};
-  add.push({kind:'match',match});
-  try{persistChange(add,{action:'CREATE_MATCH',target:mid,detail:{format,maps,score,players:ps.length}})}catch(e){return toast('Не удалось сохранить игру: хранилище браузера переполнено. Данные не изменены.');}
-  DB.maps.push(...mapObjects);DB.matches.push(match);
-  closeModal();toast('Игра сохранена. Статистика пересчитана.');render();
+let MATCH_SAVE_IN_FLIGHT=false;
+async function saveGame(){
+  if(MATCH_SAVE_IN_FLIGHT)return;
+  MATCH_SAVE_IN_FLIGHT=true;
+  const button=$('#saveGameBtn');
+  if(button)button.disabled=true;
+  try{
+    const format=$('#newFormat').value,maps=$('#newMaps').value.split(',').map(x=>x.trim().toLowerCase()).filter(Boolean),playedAt=$('#newPlayedAt').value,score=$('#newScore').value.trim(),rows=$('#newRows').value.trim().split(/\n+/).map(x=>x.trim()).filter(Boolean);
+    const sm=score.match(/^(\d+)\s*[:\-]\s*(\d+)$/);
+    if(!sm||!maps.length||!rows.length)return toast('Проверь формат, карты, счёт и игроков');
+    if(playedAt&&Number.isNaN(Date.parse(playedAt)))return toast('Некорректная дата/время игры');
+    if(+sm[1]<0||+sm[2]<0)return toast('Счёт не может быть отрицательным');
+    if(format==='BO1'&&Math.max(+sm[1],+sm[2])<13)return toast('Для карты нужен реальный CS2-счёт: победитель должен набрать минимум 13 раундов.');
+    if(format==='BO1'&&+sm[1]===+sm[2])return toast('Ничья для карты не допускается.');
+    if(format==='BO1'&&maps.length!==1)return toast('BO1 должен содержать одну карту');
+    if(format==='BO3_COMPACT'&&(maps.length<2||maps.length>3))return toast('BO3 должен содержать 2 или 3 карты');
+    if(format==='BO3_COMPACT'){
+      const a=+sm[1],b=+sm[2],needed=(a===2&&b===0)||(a===0&&b===2)?2:((a===2&&b===1)||(a===1&&b===2)?3:0);
+      if(!needed)return toast('Для BO3 используй счёт 2:0, 0:2, 2:1 или 1:2.');
+      if(needed!==maps.length)return toast('Для BO3 число карт должно совпадать со счётом серии: 2:0 = 2 карты, 2:1 = 3 карты.');
+    }
+    const knownMaps=new Set(DB.maps.filter(x=>x.archived!==true).map(x=>x.map));
+    if(maps.some(x=>!knownMaps.has(x)))return toast('Неизвестная карта. Используй карту из каталога.');
+    if(new Set(maps).size!==maps.length)return toast('Одна и та же карта указана дважды.');
+    const ps=[],seenPlayers=new Set();
+    for(const line of rows){
+      const m=line.match(/^(.+?)\s+(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)$/);
+      if(!m)return toast('Строка не распознана: '+line);
+      const rawName=m[1].trim();
+      const pid=DB.aliases[rawName]||activePlayers().find(p=>p.player_id===rawName)?.player_id||null;
+      const uniqueKey=pid||('raw:'+rawName.toLocaleLowerCase());
+      if(seenPlayers.has(uniqueKey))return toast('Игрок указан дважды: '+rawName);
+      seenPlayers.add(uniqueKey);
+      ps.push({raw_name:rawName,player_id:pid,kills:+m[2],deaths:+m[3],assists:+m[4]});
+    }
+    if(ps.length<1||ps.length>10)return toast('Укажи от 1 до 10 уникальных участников матча');
+    const modal=$('#modal');
+    let mid=modal?.dataset.matchId;
+    if(!mid){let t=Date.now();mid='match_local_'+t;while(DB.matches.some(x=>x.match_id===mid)){t++;mid='match_local_'+t}if(modal)modal.dataset.matchId=mid}
+    const now=mid.slice('match_local_'.length);
+    const add=additions(),mapIds=[],mapObjects=[];
+    maps.forEach((map,i)=>{const mapid='map_local_'+now+'_'+(i+1);mapIds.push(mapid);const detail=format==='BO1';const obj={map_id:mapid,match_id:mid,map_index:i+1,map,score:format==='BO1'?{team_a:+sm[1],team_b:+sm[2]}:null,stats_available:detail,player_stats:detail?ps.map(x=>({...x})):[],source_header:'local admin entry'};mapObjects.push(obj);add.push({kind:'map',map:obj})});
+    const match={match_id:mid,played_at:playedAt||new Date().toISOString(),source_kind:format==='BO1'?'detailed_local':'compact_bo3',format:format==='BO1'?'BO1':'BO3',header:`${format.toLowerCase()} ${score} ${maps.join('-')}`,map_ids:mapIds,series_score:format==='BO1'?`${+sm[1]>+sm[2]?1:0}:${+sm[2]>+sm[1]?1:0}`:score,series_score_source:'local_admin',series_aggregate_stats:format==='BO1'?[]:ps.map(x=>({...x}))};
+    add.push({kind:'match',match});
+    let result;
+    try{result=await persistChangeConfirmed(add,{action:'CREATE_MATCH',target:mid,detail:{format,maps,score,players:ps.length}})}
+    catch(e){toast('Не удалось сохранить матч: '+(e?.message||'ошибка облачной записи'));return}
+    if(result?.state&&Array.isArray(result.state.matches))applyLoadedState(result.state,result.state.audit);
+    else{DB.maps.push(...mapObjects);DB.matches.push(match)}
+    closeModal();
+    toast('Матч сохранён. Статистика пересчитана.');
+    render();
+  }catch(e){toast('Не удалось сохранить матч: '+(e?.message||'ошибка'))}
+  finally{MATCH_SAVE_IN_FLIGHT=false;const current=$('#saveGameBtn');if(current)current.disabled=false}
 }
 function exportBackup(){try{if(!validateBase(DB)||!validateBase(BASE))throw Error('invalid current base');const payload={version:'site-v39',exported_at:new Date().toISOString(),base:{players:BASE.players,maps:BASE.maps,matches:BASE.matches,aliases:BASE.aliases},localStorage:additions(),audit:auditLog()};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='CS5_backup_'+Date.now()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Backup создан.');}catch(e){toast('Не удалось создать backup. Текущая база не изменена.')}}
 function importBackup(file){if(!file)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result),b=x.base;if(!validateBase(b))throw Error('invalid');const importedAdditions=Array.isArray(x.localStorage)?x.localStorage:[];const nextAdd=JSON.stringify(importedAdditions),nextBase=JSON.stringify(b),nextAudit=JSON.stringify(Array.isArray(x.audit)?x.audit:[]),oldBase=localStorage.getItem('cs5_base_override'),oldAdd=localStorage.getItem('cs5_additions'),oldAudit=localStorage.getItem('cs5_audit_log');try{if(importedAdditions.length){const probe=JSON.parse(nextBase);for(const op of importedAdditions){if(!op||typeof op!=='object'||!['map','match','player','aliases','player_patch','match_patch','map_patch'].includes(op.kind))throw Error('invalid backup local operation');if(op.kind==='map'&&(!op.map||typeof op.map!=='object'))throw Error('map payload missing');if(op.kind==='match'&&(!op.match||typeof op.match!=='object'))throw Error('match payload missing');if(op.kind==='player'&&(!op.player||typeof op.player!=='object'))throw Error('player payload missing');if(op.kind==='aliases'&&(!op.aliases||typeof op.aliases!=='object'||Array.isArray(op.aliases)))throw Error('aliases payload missing');if(['player_patch','match_patch','map_patch'].includes(op.kind)&&(!op.patch||typeof op.patch!=='object'||Array.isArray(op.patch)))throw Error('patch payload missing');if(op.kind==='map'&&op.map)probe.maps.push(op.map);if(op.kind==='match'&&op.match)probe.matches.push(op.match);if(op.kind==='player'&&op.player)probe.players.push(op.player);if(op.kind==='aliases')Object.assign(probe.aliases,op.aliases||{});if(op.kind==='player_patch'){const q=probe.players.find(z=>z.player_id===op.player_id);if(!q)throw Error('missing player patch target');Object.assign(q,op.patch||{})}if(op.kind==='match_patch'){const q=probe.matches.find(z=>z.match_id===op.match_id);if(!q)throw Error('missing match patch target');Object.assign(q,op.patch||{})}if(op.kind==='map_patch'){const q=probe.maps.find(z=>z.map_id===op.map_id);if(!q)throw Error('missing map patch target');Object.assign(q,op.patch||{})}}if(!validateBase(probe))throw Error('invalid backup local operation state')}if(!validateBase(b))throw Error('invalid backup base');localStorage.setItem('cs5_base_override',nextBase);localStorage.setItem('cs5_additions',nextAdd);localStorage.setItem('cs5_audit_log',nextAudit);if(localStorage.getItem('cs5_base_override')!==nextBase||localStorage.getItem('cs5_additions')!==nextAdd||localStorage.getItem('cs5_audit_log')!==nextAudit)throw Error('storage verification failed')}catch(e){try{if(oldBase===null)localStorage.removeItem('cs5_base_override');else localStorage.setItem('cs5_base_override',oldBase);if(oldAdd===null)localStorage.removeItem('cs5_additions');else localStorage.setItem('cs5_additions',oldAdd);if(oldAudit===null)localStorage.removeItem('cs5_audit_log');else localStorage.setItem('cs5_audit_log',oldAudit)}catch{};throw e}location.reload()}catch(e){toast('Неверный или повреждённый backup. Текущая база не изменена.')}};r.readAsText(file)}
