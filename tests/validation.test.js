@@ -53,4 +53,14 @@ for (const count of [1, 9, 10]) {
   assert.equal(compact.players.length, 0, 'compact participants must remain match-only');
 }
 
+
+const fs = require('node:fs');
+const appSource = fs.readFileSync(require('node:path').join(__dirname, '..', 'app.js'), 'utf8');
+assert.match(appSource, /id="newMaps" placeholder=/);
+assert.doesNotMatch(appSource, /id="newMaps" value="mirage"/);
+assert.match(appSource, /function updateMatchScoreHint\(\)/);
+assert.match(appSource, /СЧЁТ КАРТЫ \(РАУНДЫ\)/);
+assert.match(appSource, /СЧЁТ СЕРИИ/);
+assert.doesNotMatch(appSource, /knownMaps\.has\(x\)/);
+
 console.log('validation.test.js: PASS');
