@@ -21,7 +21,7 @@ if(m.format==='BO1'&&m.map_ids.length!==1)return {ok:false,error:'BO1 must have 
 if(m.format==='BO3'&&(m.map_ids.length<2||m.map_ids.length>3))return {ok:false,error:'BO3 must have 2-3 maps'};
 if(!['BO1','BO3'].includes(m.format))return {ok:false,error:'unsupported format'};
 for(let i=0;i<m.map_ids.length;i++){const mp=maps.get(m.map_ids[i]);if(!mp||mp.match_id!==m.match_id||Number(mp.map_index)!==i+1)return {ok:false,error:'match/map relation invalid'}}
-const rows=Array.isArray(m.series_aggregate_stats)?m.series_aggregate_stats:[];if(m.source_kind==='compact_bo3'&&rows.length!==10)return {ok:false,error:'compact BO3 must contain 10 rows'}
+const rows=Array.isArray(m.series_aggregate_stats)?m.series_aggregate_stats:[];if(m.source_kind==='compact_bo3'&&(rows.length<1||rows.length>10))return {ok:false,error:'compact BO3 must contain 1-10 rows'}
 }
 return {ok:true};
 }catch(e){return {ok:false,error:e?.message||'validation failed'}}
